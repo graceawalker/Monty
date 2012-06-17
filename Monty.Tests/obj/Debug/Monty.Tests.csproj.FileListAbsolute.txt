@@ -1,0 +1,17 @@
+D:\Projects\MontyWeb\Monty\Monty.Tests\bin\Debug\Monty.Tests.dll
+D:\Projects\MontyWeb\Monty\Monty.Tests\bin\Debug\Monty.Tests.pdb
+D:\Projects\MontyWeb\Monty\Monty.Tests\bin\Debug\nunit.framework.dll
+D:\Projects\MontyWeb\Monty\Monty.Tests\bin\Debug\Shouldly.dll
+D:\Projects\MontyWeb\Monty\Monty.Tests\bin\Debug\nunit.framework.xml
+D:\Projects\MontyWeb\Monty\Monty.Tests\bin\Debug\Shouldly.pdb
+D:\Projects\MontyWeb\Monty\Monty.Tests\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\MontyWeb\Monty\Monty.Tests\obj\Debug\Monty.Tests.dll
+D:\Projects\MontyWeb\Monty\Monty.Tests\obj\Debug\Monty.Tests.pdb
+D:\Projects\MontyWeb\Monty\Monty.Tests\bin\Debug\Monty.Repository.dll
+D:\Projects\MontyWeb\Monty\Monty.Tests\bin\Debug\MongoDB.Driver.dll
+D:\Projects\MontyWeb\Monty\Monty.Tests\bin\Debug\MongoDB.Bson.dll
+D:\Projects\MontyWeb\Monty\Monty.Tests\bin\Debug\Monty.Repository.pdb
+D:\Projects\MontyWeb\Monty\Monty.Tests\bin\Debug\MongoDB.Driver.pdb
+D:\Projects\MontyWeb\Monty\Monty.Tests\bin\Debug\MongoDB.Driver.xml
+D:\Projects\MontyWeb\Monty\Monty.Tests\bin\Debug\MongoDB.Bson.pdb
+D:\Projects\MontyWeb\Monty\Monty.Tests\bin\Debug\MongoDB.Bson.xml

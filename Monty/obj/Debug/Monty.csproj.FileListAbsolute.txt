@@ -1,0 +1,5 @@
+D:\Projects\MontyWeb\Monty\Monty\bin\Debug\Monty.dll
+D:\Projects\MontyWeb\Monty\Monty\bin\Debug\Monty.pdb
+D:\Projects\MontyWeb\Monty\Monty\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\MontyWeb\Monty\Monty\obj\Debug\Monty.dll
+D:\Projects\MontyWeb\Monty\Monty\obj\Debug\Monty.pdb

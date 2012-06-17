@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="79c6f1c6-9ba6-495d-b238-433afa64f24d" name="User@780847-PC 2012-06-17 21:27:04" runUser="780847-PC\User" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="d8b9ca7c-7854-4490-a316-21eb3cde8ced">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="User_780847-PC 2012-06-17 21_27_04">
+      <DeploymentItem filename="D:\Projects\MontyWeb\Monty\packages\Shouldly.1.1.1.1\lib\35\Shouldly.dll" />
+      <DeploymentItem filename="D:\Projects\MontyWeb\Monty\packages\SpecFlow.1.8.1\lib\net35\TechTalk.SpecFlow.dll" />
+      <DeploymentItem filename="D:\Projects\MontyWeb\Monty\packages\NUnit.2.6.0.12054\lib\nunit.framework.dll" />
+      <DeploymentItem filename="D:\Projects\MontyWeb\Monty\Monty\bin\Debug\Monty.dll" />
+      <DeploymentItem filename="D:\Projects\Monty\Monty.Repository\bin\Debug\Monty.Repository.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-06-17T21:27:04.0839723+01:00" queuing="2012-06-17T21:27:04.1299749+01:00" start="2012-06-17T21:27:04.1499761+01:00" finish="2012-06-17T21:27:04.7620111+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="4" executed="4" passed="3" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CreatingMultiplePayPeriods" storage="d:\projects\montyweb\monty\monty.test.features\bin\debug\monty.test.features.dll" id="8b5cde8b-f421-458b-5bbe-672d5a66bb7e">
+      <Description>Creating multiple pay periods</Description>
+      <Execution id="40241394-a5fd-4931-9d53-fa799307b99e" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Configuring Pay Period</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Projects/MontyWeb/Monty/Monty.Test.Features/bin/Debug/Monty.Test.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Monty.Test.Features.ConfiguringPayPeriodFeature, Monty.Test.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingMultiplePayPeriods" />
+    </UnitTest>
+    <UnitTest name="CreatingAPayPeriod" storage="d:\projects\montyweb\monty\monty.test.features\bin\debug\monty.test.features.dll" id="be3bcb9a-f336-5018-4e2b-6995101bc820">
+      <Description>Creating a pay period</Description>
+      <Execution id="7bdb2c55-9b3e-4de3-ac9b-935f8319c8cc" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Configuring Pay Period</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Projects/MontyWeb/Monty/Monty.Test.Features/bin/Debug/Monty.Test.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Monty.Test.Features.ConfiguringPayPeriodFeature, Monty.Test.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingAPayPeriod" />
+    </UnitTest>
+    <UnitTest name="DeletingAPayPeriod" storage="d:\projects\montyweb\monty\monty.test.features\bin\debug\monty.test.features.dll" id="f7d5c748-f161-dfc2-e32b-986d08cd7f3f">
+      <Description>Deleting a pay period</Description>
+      <Execution id="b3ca3942-1f14-42c0-a654-3003f6b0337a" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Configuring Pay Period</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Projects/MontyWeb/Monty/Monty.Test.Features/bin/Debug/Monty.Test.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Monty.Test.Features.ConfiguringPayPeriodFeature, Monty.Test.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DeletingAPayPeriod" />
+    </UnitTest>
+    <UnitTest name="EditingAPayPeriod" storage="d:\projects\montyweb\monty\monty.test.features\bin\debug\monty.test.features.dll" id="62153a28-6497-490d-e93d-2b6b12853231">
+      <Description>Editing a pay period</Description>
+      <Execution id="206e04af-a269-489c-b80c-899bd6be186f" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Configuring Pay Period</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Projects/MontyWeb/Monty/Monty.Test.Features/bin/Debug/Monty.Test.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Monty.Test.Features.ConfiguringPayPeriodFeature, Monty.Test.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EditingAPayPeriod" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="62153a28-6497-490d-e93d-2b6b12853231" executionId="206e04af-a269-489c-b80c-899bd6be186f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8b5cde8b-f421-458b-5bbe-672d5a66bb7e" executionId="40241394-a5fd-4931-9d53-fa799307b99e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="be3bcb9a-f336-5018-4e2b-6995101bc820" executionId="7bdb2c55-9b3e-4de3-ac9b-935f8319c8cc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f7d5c748-f161-dfc2-e32b-986d08cd7f3f" executionId="b3ca3942-1f14-42c0-a654-3003f6b0337a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="206e04af-a269-489c-b80c-899bd6be186f" testId="62153a28-6497-490d-e93d-2b6b12853231" testName="EditingAPayPeriod" computerName="780847-PC" duration="00:00:00.2247179" startTime="2012-06-17T21:27:04.1429757+01:00" endTime="2012-06-17T21:27:04.6240032+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="206e04af-a269-489c-b80c-899bd6be186f">
+      <Output>
+        <StdOut>Given I have a new system with pay periods
+  --- table step argument ---
+  | Name     | StartDate | EndDate  |
+  | JuneTest | 1/1/2012  | 2/2/2012 |
+-&gt; done: ConfiguringPayPeriod.GivenIHaveANewSystemWithPayPeriods(&lt;table&gt;) (0.2s)
+When I edit and save JuneTest with details
+  --- table step argument ---
+  | Name           | StartDate | EndDate  |
+  | JuneTestChange | 1/2/2012  | 2/3/2012 |
+-&gt; done: ConfiguringPayPeriod.WhenIEditAndSavePayPeriodWithDetails("JuneTest", &lt;table&gt;) (0.0s)
+And I retrieve JuneTestChange from the database
+-&gt; done: ConfiguringPayPeriod.WhenIRetrievePayPeriodFromTheDatabase("JuneTestChange") (0.0s)
+Then It should have details
+  --- table step argument ---
+  | Name           | StartDate | EndDate  |
+  | JuneTestChange | 1/2/2012  | 2/3/2012 |
+-&gt; done: ConfiguringPayPeriod.ThenItShouldHaveDetails(&lt;table&gt;) (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="40241394-a5fd-4931-9d53-fa799307b99e" testId="8b5cde8b-f421-458b-5bbe-672d5a66bb7e" testName="CreatingMultiplePayPeriods" computerName="780847-PC" duration="00:00:00.0725132" startTime="2012-06-17T21:27:04.6250032+01:00" endTime="2012-06-17T21:27:04.7020076+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="40241394-a5fd-4931-9d53-fa799307b99e">
+      <Output>
+        <StdOut>Given I have a new system with pay periods
+  --- table step argument ---
+  | Name     | StartDate | EndDate  |
+  | JuneTest | 1/1/2012  | 2/2/2012 |
+  | JulyTest | 3/3/2012  | 4/4/2012 |
+-&gt; done: ConfiguringPayPeriod.GivenIHaveANewSystemWithPayPeriods(&lt;table&gt;) (0.0s)
+When I retrieve all pay periods
+-&gt; done: ConfiguringPayPeriod.WhenIRetrieveAllPayPeriods() (0.0s)
+Then They should have details
+  --- table step argument ---
+  | Name     | StartDate | EndDate  |
+  | JuneTest | 1/1/2012  | 2/2/2012 |
+  | JulyTest | 3/3/2012  | 4/4/2012 |
+-&gt; error: 
+    _currentPayPeriods
+        should contain an element satisfying the condition
+    (i.EndDate == value(Monty.Test.Features.StepDefs.ConfiguringPayPeriod+&lt;&gt;c__DisplayClass1).newPeriod.EndDate)
+        but does not</StdOut>
+        <ErrorInfo>
+          <Message>Test method Monty.Test.Features.ConfiguringPayPeriodFeature.CreatingMultiplePayPeriods threw exception: 
+Shouldly.ChuckedAWobbly: 
+    _currentPayPeriods
+        should contain an element satisfying the condition
+    (i.EndDate == value(Monty.Test.Features.StepDefs.ConfiguringPayPeriod+&lt;&gt;c__DisplayClass1).newPeriod.EndDate)
+        but does not</Message>
+          <StackTrace>    at Shouldly.ShouldBeEnumerableTestExtensions.ShouldContain[T](IEnumerable`1 actual, Expression`1 elementPredicate) in d:\BuildAgent-01\work\462bd6a773f7a920\src\Shouldly\ShouldBeEnumerableTestExtensions.cs:line 29
+   at Monty.Test.Features.StepDefs.ConfiguringPayPeriod.ThenTheyShouldHaveDetails(Table table) in D:\Projects\MontyWeb\Monty\Monty.Test.Features\StepDefs\ConfiguringPayPeriod.cs:line 60
+   at lambda_method(Closure , IContextManager , Table )
+   at TechTalk.SpecFlow.Bindings.MethodBinding.InvokeAction(IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Bindings.StepDefinitionBinding.Invoke(IContextManager contextManager, ITestTracer testTracer, Object[] arguments, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepArgs stepArgs)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Monty.Test.Features.ConfiguringPayPeriodFeature.ScenarioCleanup() in D:\Projects\MontyWeb\Monty\Monty.Test.Features\ConfiguringPayPeriod.feature.cs:line 0
+   at Monty.Test.Features.ConfiguringPayPeriodFeature.CreatingMultiplePayPeriods() in d:\Projects\MontyWeb\Monty\Monty.Test.Features\ConfiguringPayPeriod.feature:line 20
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7bdb2c55-9b3e-4de3-ac9b-935f8319c8cc" testId="be3bcb9a-f336-5018-4e2b-6995101bc820" testName="CreatingAPayPeriod" computerName="780847-PC" duration="00:00:00.0101286" startTime="2012-06-17T21:27:04.7040077+01:00" endTime="2012-06-17T21:27:04.7190086+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7bdb2c55-9b3e-4de3-ac9b-935f8319c8cc">
+      <Output>
+        <StdOut>Given I have a new system with pay periods
+  --- table step argument ---
+  | Name     | StartDate | EndDate  |
+  | JuneTest | 1/1/2012  | 2/2/2012 |
+-&gt; done: ConfiguringPayPeriod.GivenIHaveANewSystemWithPayPeriods(&lt;table&gt;) (0.0s)
+When I retrieve JuneTest from the database
+-&gt; done: ConfiguringPayPeriod.WhenIRetrievePayPeriodFromTheDatabase("JuneTest") (0.0s)
+Then It should have details
+  --- table step argument ---
+  | Name     | StartDate | EndDate  |
+  | JuneTest | 1/1/2012  | 2/2/2012 |
+-&gt; done: ConfiguringPayPeriod.ThenItShouldHaveDetails(&lt;table&gt;) (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b3ca3942-1f14-42c0-a654-3003f6b0337a" testId="f7d5c748-f161-dfc2-e32b-986d08cd7f3f" testName="DeletingAPayPeriod" computerName="780847-PC" duration="00:00:00.0057817" startTime="2012-06-17T21:27:04.7220088+01:00" endTime="2012-06-17T21:27:04.7320093+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b3ca3942-1f14-42c0-a654-3003f6b0337a">
+      <Output>
+        <StdOut>Given I have a new system with pay periods
+  --- table step argument ---
+  | Name     | StartDate | EndDate  |
+  | JuneTest | 1/1/2012  | 2/2/2012 |
+-&gt; done: ConfiguringPayPeriod.GivenIHaveANewSystemWithPayPeriods(&lt;table&gt;) (0.0s)
+When I delete JuneTest
+-&gt; done: ConfiguringPayPeriod.WhenIDelete("JuneTest") (0.0s)
+Then The pay period database should be empty
+-&gt; done: ConfiguringPayPeriod.ThenThePayPeriodDatabaseShouldBeEmpty() (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

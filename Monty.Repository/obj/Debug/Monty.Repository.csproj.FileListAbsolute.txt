@@ -1,0 +1,16 @@
+D:\Projects\Monty\Monty.Repository\bin\Debug\Monty.Repository.dll
+D:\Projects\Monty\Monty.Repository\bin\Debug\Monty.Repository.pdb
+D:\Projects\Monty\Monty.Repository\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\Monty\Monty.Repository\obj\Debug\Monty.Repository.dll
+D:\Projects\Monty\Monty.Repository\obj\Debug\Monty.Repository.pdb
+D:\Projects\MontyRepo\Monty.Repository\bin\Debug\Monty.Repository.dll
+D:\Projects\MontyRepo\Monty.Repository\bin\Debug\Monty.Repository.pdb
+D:\Projects\MontyRepo\Monty.Repository\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\MontyRepo\Monty.Repository\obj\Debug\Monty.Repository.dll
+D:\Projects\MontyRepo\Monty.Repository\obj\Debug\Monty.Repository.pdb
+D:\Projects\MontyRepo\Monty.Repository\bin\Debug\MongoDB.Bson.dll
+D:\Projects\MontyRepo\Monty.Repository\bin\Debug\MongoDB.Driver.dll
+D:\Projects\MontyRepo\Monty.Repository\bin\Debug\MongoDB.Bson.pdb
+D:\Projects\MontyRepo\Monty.Repository\bin\Debug\MongoDB.Bson.xml
+D:\Projects\MontyRepo\Monty.Repository\bin\Debug\MongoDB.Driver.pdb
+D:\Projects\MontyRepo\Monty.Repository\bin\Debug\MongoDB.Driver.xml

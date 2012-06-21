@@ -3,3 +3,8 @@ D:\Projects\MontyWeb\Monty\Monty\bin\Debug\Monty.pdb
 D:\Projects\MontyWeb\Monty\Monty\obj\Debug\ResolveAssemblyReference.cache
 D:\Projects\MontyWeb\Monty\Monty\obj\Debug\Monty.dll
 D:\Projects\MontyWeb\Monty\Monty\obj\Debug\Monty.pdb
+D:\Projects\MontyGit\Monty\Monty\bin\Debug\Monty.dll
+D:\Projects\MontyGit\Monty\Monty\bin\Debug\Monty.pdb
+D:\Projects\MontyGit\Monty\Monty\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\MontyGit\Monty\Monty\obj\Debug\Monty.dll
+D:\Projects\MontyGit\Monty\Monty\obj\Debug\Monty.pdb

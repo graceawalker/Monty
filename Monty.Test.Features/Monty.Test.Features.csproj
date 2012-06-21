@@ -75,7 +75,7 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Monty\Monty.Repository\Monty.Repository.csproj">
+    <ProjectReference Include="..\Monty.Repository\Monty.Repository.csproj">
       <Project>{1B25A227-744D-4C28-96D8-43BE4E72ACB4}</Project>
       <Name>Monty.Repository</Name>
     </ProjectReference>

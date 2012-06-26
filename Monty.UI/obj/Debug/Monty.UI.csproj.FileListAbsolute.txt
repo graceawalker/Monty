@@ -12,3 +12,10 @@ D:\Projects\MontyGit\Monty\Monty.UI\bin\EntityFramework.xml
 D:\Projects\MontyGit\Monty\Monty.UI\obj\Debug\ResolveAssemblyReference.cache
 D:\Projects\MontyGit\Monty\Monty.UI\obj\Debug\Monty.UI.dll
 D:\Projects\MontyGit\Monty\Monty.UI\obj\Debug\Monty.UI.pdb
+D:\development\MontyBranch\Monty.UI\bin\Monty.UI.dll
+D:\development\MontyBranch\Monty.UI\bin\Monty.UI.pdb
+D:\development\MontyBranch\Monty.UI\bin\EntityFramework.dll
+D:\development\MontyBranch\Monty.UI\bin\EntityFramework.xml
+D:\development\MontyBranch\Monty.UI\obj\Debug\ResolveAssemblyReference.cache
+D:\development\MontyBranch\Monty.UI\obj\Debug\Monty.UI.dll
+D:\development\MontyBranch\Monty.UI\obj\Debug\Monty.UI.pdb

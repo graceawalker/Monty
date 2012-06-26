@@ -45,16 +45,16 @@ namespace Monty.Tests
             repo.AddNew(new PayPeriod("Test", "03/01/2012", "01/01/2012"));
             var original = repo.GetPayPeriodByName("Test");
             original.Name = "TestChange";
-            original.StartDate = new DateTime(2012, 1, 1);
+            original.StartDate = new DateTimeOffset(new DateTime(2012, 1, 1));
             //This doesnt work
-            original.EndDate = new DateTime(2012, 4, 4);
+            original.EndDate = new DateTimeOffset(new DateTime(2012, 4, 4));
             //This will work
             //original.EndDate = new DateTime(2012, 3, 3);
             repo.Update(original);
             var retrieved = repo.GetPayPeriodByName("TestChange");
-            retrieved.StartDate.ToShortDateString().ShouldBe(new DateTime(2012,1,1).ToShortDateString());
+            retrieved.StartDate.ShouldBe(new DateTimeOffset(new DateTime(2012,1,1)));
             //this doesnt work
-            retrieved.EndDate.ToShortDateString().ShouldBe(new DateTime(2012, 4, 4).ToShortDateString());
+            retrieved.EndDate.ShouldBe(new DateTimeOffset(new DateTime(2012, 4, 4)));
             //This will work
             //retrieved.EndDate.ToShortDateString().ShouldBe(new DateTime(2012, 3, 3).ToShortDateString());
             repo.GetPayPeriodByName("Test").ShouldBe(null);

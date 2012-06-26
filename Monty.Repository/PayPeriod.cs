@@ -19,14 +19,12 @@ namespace Monty.Repository
             EndDate = parsed;
 
         }
-
-        [BsonDateTimeOptions]
-        public DateTime EndDate { get; set; }
+        public DateTimeOffset EndDate { get; set; }
         [BsonId]
         public ObjectId Id { get; set; }
         [BsonElement]
         public string Name { get; set; }
-        [BsonDateTimeOptions]
-        public DateTime StartDate { get; set; }
+   
+        public DateTimeOffset StartDate { get; set; }
     }
 }

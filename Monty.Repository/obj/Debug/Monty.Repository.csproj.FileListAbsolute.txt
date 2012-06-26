@@ -22,3 +22,14 @@ D:\Projects\MontyGit\Monty\Monty.Repository\bin\Debug\MongoDB.Driver.xml
 D:\Projects\MontyGit\Monty\Monty.Repository\obj\Debug\ResolveAssemblyReference.cache
 D:\Projects\MontyGit\Monty\Monty.Repository\obj\Debug\Monty.Repository.dll
 D:\Projects\MontyGit\Monty\Monty.Repository\obj\Debug\Monty.Repository.pdb
+D:\development\MontyBranch\Monty.Repository\bin\Debug\Monty.Repository.dll
+D:\development\MontyBranch\Monty.Repository\bin\Debug\Monty.Repository.pdb
+D:\development\MontyBranch\Monty.Repository\bin\Debug\Monty.dll
+D:\development\MontyBranch\Monty.Repository\bin\Debug\Monty.pdb
+D:\development\MontyBranch\Monty.Repository\bin\Debug\MongoDB.Bson.pdb
+D:\development\MontyBranch\Monty.Repository\bin\Debug\MongoDB.Bson.xml
+D:\development\MontyBranch\Monty.Repository\bin\Debug\MongoDB.Driver.pdb
+D:\development\MontyBranch\Monty.Repository\bin\Debug\MongoDB.Driver.xml
+D:\development\MontyBranch\Monty.Repository\obj\Debug\ResolveAssemblyReference.cache
+D:\development\MontyBranch\Monty.Repository\obj\Debug\Monty.Repository.dll
+D:\development\MontyBranch\Monty.Repository\obj\Debug\Monty.Repository.pdb

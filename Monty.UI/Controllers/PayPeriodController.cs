@@ -18,7 +18,7 @@ namespace Monty.UI.Controllers
         }
 
         [HttpPost]
-        public ActionResult Navigate(string navigate, PayPeriod payPeriod)
+        public ActionResult Navigate(string navigate)
         {
             if (navigate == "New Pay Period")
                 return RedirectToAction("New", "PayPeriod");

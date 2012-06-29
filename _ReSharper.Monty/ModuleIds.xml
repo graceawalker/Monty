@@ -1,0 +1,6 @@
+<Modules>
+  <Module PersistentId="A3EF4BA4-00F7-4D17-A72C-F033FCD17420" ModuleId="Monty.Tests" />
+  <Module PersistentId="1B25A227-744D-4C28-96D8-43BE4E72ACB4" ModuleId="Monty.Repository" />
+  <Module PersistentId="CA050C23-B9DF-4B10-BEE8-15AE911D0547" ModuleId="Monty.Model" />
+  <Module PersistentId="C2F2EA78-F844-48F8-BCD8-F64A6D637898" ModuleId="Monty.Features" />
+</Modules>

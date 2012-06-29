@@ -13,3 +13,8 @@ D:\development\MontyBranch\Monty\bin\Debug\Monty.pdb
 D:\development\MontyBranch\Monty\obj\Debug\ResolveAssemblyReference.cache
 D:\development\MontyBranch\Monty\obj\Debug\Monty.dll
 D:\development\MontyBranch\Monty\obj\Debug\Monty.pdb
+D:\GitProjects\Monty\Monty\Monty\bin\Debug\Monty.dll
+D:\GitProjects\Monty\Monty\Monty\bin\Debug\Monty.pdb
+D:\GitProjects\Monty\Monty\Monty\obj\Debug\ResolveAssemblyReference.cache
+D:\GitProjects\Monty\Monty\Monty\obj\Debug\Monty.dll
+D:\GitProjects\Monty\Monty\Monty\obj\Debug\Monty.pdb

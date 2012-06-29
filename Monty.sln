@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monty.Tests", "Monty.Tests\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monty.UI", "Monty.UI\Monty.UI.csproj", "{8DE8BC45-4D56-4475-87D5-07D00153D0B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monty.Test.Features", "Monty.Test.Features\Monty.Test.Features.csproj", "{C2F2EA78-F844-48F8-BCD8-F64A6D637898}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monty.Features", "Monty.Test.Features\Monty.Features.csproj", "{C2F2EA78-F844-48F8-BCD8-F64A6D637898}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8570FD94-C846-4E06-AA86-110B05C1C8C6}"
 	ProjectSection(SolutionItems) = preProject
@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monty.Repository", "Monty.Repository\Monty.Repository.csproj", "{1B25A227-744D-4C28-96D8-43BE4E72ACB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monty.Model", "Monty.Model\Monty.Model.csproj", "{CA050C23-B9DF-4B10-BEE8-15AE911D0547}"
 EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
@@ -47,6 +49,10 @@ Global
 		{1B25A227-744D-4C28-96D8-43BE4E72ACB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B25A227-744D-4C28-96D8-43BE4E72ACB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B25A227-744D-4C28-96D8-43BE4E72ACB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA050C23-B9DF-4B10-BEE8-15AE911D0547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA050C23-B9DF-4B10-BEE8-15AE911D0547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA050C23-B9DF-4B10-BEE8-15AE911D0547}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA050C23-B9DF-4B10-BEE8-15AE911D0547}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using Monty.DAL;
 using TechTalk.SpecFlow;
 using Monty.Repository;
 using Shouldly;
 
-namespace Monty.Test.Features.StepDefs
+namespace Monty.Features.StepDefs
 {
     [Binding]
     public class ConfiguringPayPeriod
@@ -55,9 +55,9 @@ namespace Monty.Test.Features.StepDefs
             foreach (var row in table.Rows)
             {
                 var newPeriod = new PayPeriod(row["Name"], row["StartDate"], row["EndDate"]);
-                _currentPayPeriods.ShouldContain<PayPeriod>(i=>i.Name == newPeriod.Name);
-                _currentPayPeriods.ShouldContain<PayPeriod>(i => i.StartDate== newPeriod.StartDate);
-                _currentPayPeriods.ShouldContain<PayPeriod>(i => i.EndDate == newPeriod.EndDate);
+                _currentPayPeriods.ShouldContain(i=>i.Name == newPeriod.Name);
+                _currentPayPeriods.ShouldContain(i => i.StartDate== newPeriod.StartDate);
+                _currentPayPeriods.ShouldContain(i => i.EndDate == newPeriod.EndDate);
             }
         }
 

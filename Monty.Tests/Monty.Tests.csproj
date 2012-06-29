@@ -53,6 +53,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Monty.Model\Monty.Model.csproj">
+      <Project>{CA050C23-B9DF-4B10-BEE8-15AE911D0547}</Project>
+      <Name>Monty.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Monty.Repository\Monty.Repository.csproj">
       <Project>{1B25A227-744D-4C28-96D8-43BE4E72ACB4}</Project>
       <Name>Monty.Repository</Name>

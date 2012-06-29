@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using Monty.DAL;
 using Monty.Repository;
 using Shouldly;
 using NUnit.Framework;
@@ -46,17 +45,11 @@ namespace Monty.Tests
             var original = repo.GetPayPeriodByName("Test");
             original.Name = "TestChange";
             original.StartDate = new DateTimeOffset(new DateTime(2012, 1, 1));
-            //This doesnt work
             original.EndDate = new DateTimeOffset(new DateTime(2012, 4, 4));
-            //This will work
-            //original.EndDate = new DateTime(2012, 3, 3);
             repo.Update(original);
             var retrieved = repo.GetPayPeriodByName("TestChange");
             retrieved.StartDate.ShouldBe(new DateTimeOffset(new DateTime(2012,1,1)));
-            //this doesnt work
             retrieved.EndDate.ShouldBe(new DateTimeOffset(new DateTime(2012, 4, 4)));
-            //This will work
-            //retrieved.EndDate.ToShortDateString().ShouldBe(new DateTime(2012, 3, 3).ToShortDateString());
             repo.GetPayPeriodByName("Test").ShouldBe(null);
         }
 

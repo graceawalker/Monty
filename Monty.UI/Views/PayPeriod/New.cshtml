@@ -1,0 +1,13 @@
+﻿<h2>
+    New</h2>
+@using (Html.BeginForm("Navigate", "PayPeriod"))
+{
+    //@Html.TextBoxFor(m=>m.Name)
+    <label>
+        Name</label><input type="text" id="Name" />
+    <label>
+        Start Date</label><input type="text" id="StartDate" />
+    <label>
+        End Date</label><input type="text" id="EndDate" />
+
+    <input type="submit" value="Save" name="Navigate" />}

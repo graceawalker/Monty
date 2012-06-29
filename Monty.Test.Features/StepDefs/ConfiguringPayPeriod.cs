@@ -66,12 +66,9 @@ namespace Monty.Features.StepDefs
         {
             var payPeriod = _payPeriodRepo.GetPayPeriodByName(name);
             var row = table.Rows[0];
-            DateTime date;
             payPeriod.Name = row["Name"];
-            DateTime.TryParse(row["StartDate"], out date);
-            payPeriod.StartDate = date;
-            DateTime.TryParse(row["EndDate"], out date);
-            payPeriod.EndDate = date;
+            payPeriod.StartDate = Convert.ToDateTime(row["StartDate"]);
+            payPeriod.EndDate = Convert.ToDateTime(row["EndDate"]);
             _payPeriodRepo.Update(payPeriod);
         }
 

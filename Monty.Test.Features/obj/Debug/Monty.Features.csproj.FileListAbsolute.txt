@@ -21,3 +21,12 @@ D:\GitProjects\Monty\Monty\Monty.Test.Features\obj\Debug\Monty.Features.dll
 D:\GitProjects\Monty\Monty\Monty.Test.Features\obj\Debug\Monty.Features.pdb
 D:\GitProjects\Monty\Monty\Monty.Test.Features\bin\Debug\Monty.Model.dll
 D:\GitProjects\Monty\Monty\Monty.Test.Features\bin\Debug\Monty.Model.pdb
+D:\GitProjects\Monty\Monty\Monty.Test.Features\bin\Debug\Coypu.dll
+D:\GitProjects\Monty\Monty\Monty.Test.Features\bin\Debug\Ionic.Zip.dll
+D:\GitProjects\Monty\Monty\Monty.Test.Features\bin\Debug\Newtonsoft.Json.dll
+D:\GitProjects\Monty\Monty\Monty.Test.Features\bin\Debug\WebDriver.dll
+D:\GitProjects\Monty\Monty\Monty.Test.Features\bin\Debug\Coypu.xml
+D:\GitProjects\Monty\Monty\Monty.Test.Features\bin\Debug\Ionic.Zip.xml
+D:\GitProjects\Monty\Monty\Monty.Test.Features\bin\Debug\Newtonsoft.Json.pdb
+D:\GitProjects\Monty\Monty\Monty.Test.Features\bin\Debug\Newtonsoft.Json.xml
+D:\GitProjects\Monty\Monty\Monty.Test.Features\bin\Debug\WebDriver.xml

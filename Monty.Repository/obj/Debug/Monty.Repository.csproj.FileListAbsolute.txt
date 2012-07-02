@@ -46,3 +46,5 @@ D:\GitProjects\Monty\Monty\Monty.Repository\obj\Debug\Monty.Repository.dll
 D:\GitProjects\Monty\Monty\Monty.Repository\obj\Debug\Monty.Repository.pdb
 D:\GitProjects\Monty\Monty\Monty.Repository\bin\Debug\Monty.Model.dll
 D:\GitProjects\Monty\Monty\Monty.Repository\bin\Debug\Monty.Model.pdb
+D:\Projects\MontyGit\Monty\Monty.Repository\bin\Debug\Monty.Model.dll
+D:\Projects\MontyGit\Monty\Monty.Repository\bin\Debug\Monty.Model.pdb

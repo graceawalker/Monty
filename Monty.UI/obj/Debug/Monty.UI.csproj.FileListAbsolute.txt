@@ -31,3 +31,8 @@ D:\GitProjects\Monty\Monty\Monty.UI\bin\MongoDB.Bson.dll
 D:\GitProjects\Monty\Monty\Monty.UI\bin\Monty.Model.pdb
 D:\GitProjects\Monty\Monty\Monty.UI\bin\MongoDB.Bson.pdb
 D:\GitProjects\Monty\Monty\Monty.UI\bin\MongoDB.Bson.xml
+D:\Projects\MontyGit\Monty\Monty.UI\bin\Monty.Model.dll
+D:\Projects\MontyGit\Monty\Monty.UI\bin\MongoDB.Bson.dll
+D:\Projects\MontyGit\Monty\Monty.UI\bin\Monty.Model.pdb
+D:\Projects\MontyGit\Monty\Monty.UI\bin\MongoDB.Bson.pdb
+D:\Projects\MontyGit\Monty\Monty.UI\bin\MongoDB.Bson.xml

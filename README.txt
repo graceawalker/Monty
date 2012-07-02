@@ -1,4 +1,4 @@
-Accounting software for my sister
+Accounting software for my sister - very early days!!
 
 Install MongoDB and run mongod.exe on PC
 Create data/db directories on C:

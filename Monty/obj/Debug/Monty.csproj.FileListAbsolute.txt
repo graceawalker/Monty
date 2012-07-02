@@ -18,3 +18,13 @@ D:\GitProjects\Monty\Monty\Monty\bin\Debug\Monty.pdb
 D:\GitProjects\Monty\Monty\Monty\obj\Debug\ResolveAssemblyReference.cache
 D:\GitProjects\Monty\Monty\Monty\obj\Debug\Monty.dll
 D:\GitProjects\Monty\Monty\Monty\obj\Debug\Monty.pdb
+D:\Projects\MontyGit\Monty\Monty\bin\Debug\Castle.Core.dll
+D:\Projects\MontyGit\Monty\Monty\bin\Debug\Castle.Windsor.dll
+D:\Projects\MontyGit\Monty\Monty\bin\Debug\Monty.Repository.dll
+D:\Projects\MontyGit\Monty\Monty\bin\Debug\Monty.Model.dll
+D:\Projects\MontyGit\Monty\Monty\bin\Debug\MongoDB.Driver.dll
+D:\Projects\MontyGit\Monty\Monty\bin\Debug\MongoDB.Bson.dll
+D:\Projects\MontyGit\Monty\Monty\bin\Debug\Monty.Repository.pdb
+D:\Projects\MontyGit\Monty\Monty\bin\Debug\Castle.Core.xml
+D:\Projects\MontyGit\Monty\Monty\bin\Debug\Castle.Windsor.xml
+D:\Projects\MontyGit\Monty\Monty\bin\Debug\Monty.Model.pdb

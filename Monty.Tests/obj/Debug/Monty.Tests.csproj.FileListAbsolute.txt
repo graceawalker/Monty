@@ -25,8 +25,6 @@ D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\MongoDB.Bson.dll
 D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\Monty.Repository.pdb
 D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\nunit.framework.xml
 D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\Shouldly.pdb
-D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\MongoDB.Driver.pdb
-D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\MongoDB.Driver.xml
 D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\MongoDB.Bson.pdb
 D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\MongoDB.Bson.xml
 D:\Projects\MontyGit\Monty\Monty.Tests\obj\Debug\ResolveAssemblyReference.cache
@@ -70,3 +68,12 @@ D:\GitProjects\Monty\Monty\Monty.Tests\bin\Debug\Monty.Model.dll
 D:\GitProjects\Monty\Monty\Monty.Tests\bin\Debug\Monty.Model.pdb
 D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\Monty.Model.dll
 D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\Monty.Model.pdb
+D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\Monty.UI.dll
+D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\Moq.dll
+D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\Monty.UI.pdb
+D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\Moq.pdb
+D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\Moq.xml
+D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\Castle.Windsor.dll
+D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\Castle.Core.dll
+D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\Castle.Windsor.xml
+D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\Castle.Core.xml

@@ -1,4 +1,7 @@
-﻿@using (Html.BeginForm("Navigate", "PayPeriod"))
+﻿@*@using (Html.BeginForm("Navigate", "PayPeriod"))
 {
     <input type="submit" value="New Pay Period" name="navigate" />
-}
+}*@
+
+@Html.ActionLink("Create New", "New", "PayPeriod")
+@Html.ActionLink("Existing", "Existing", "PayPeriod")

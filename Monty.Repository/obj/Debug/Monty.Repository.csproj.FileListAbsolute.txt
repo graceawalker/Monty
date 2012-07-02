@@ -13,12 +13,6 @@ D:\Projects\Monty\Monty.Repository\bin\Debug\MongoDB.Driver.pdb
 D:\Projects\Monty\Monty.Repository\bin\Debug\MongoDB.Driver.xml
 D:\Projects\MontyGit\Monty\Monty.Repository\bin\Debug\Monty.Repository.dll
 D:\Projects\MontyGit\Monty\Monty.Repository\bin\Debug\Monty.Repository.pdb
-D:\Projects\MontyGit\Monty\Monty.Repository\bin\Debug\Monty.dll
-D:\Projects\MontyGit\Monty\Monty.Repository\bin\Debug\Monty.pdb
-D:\Projects\MontyGit\Monty\Monty.Repository\bin\Debug\MongoDB.Bson.pdb
-D:\Projects\MontyGit\Monty\Monty.Repository\bin\Debug\MongoDB.Bson.xml
-D:\Projects\MontyGit\Monty\Monty.Repository\bin\Debug\MongoDB.Driver.pdb
-D:\Projects\MontyGit\Monty\Monty.Repository\bin\Debug\MongoDB.Driver.xml
 D:\Projects\MontyGit\Monty\Monty.Repository\obj\Debug\ResolveAssemblyReference.cache
 D:\Projects\MontyGit\Monty\Monty.Repository\obj\Debug\Monty.Repository.dll
 D:\Projects\MontyGit\Monty\Monty.Repository\obj\Debug\Monty.Repository.pdb

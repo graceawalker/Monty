@@ -36,3 +36,12 @@ D:\Projects\MontyGit\Monty\Monty.UI\bin\MongoDB.Bson.dll
 D:\Projects\MontyGit\Monty\Monty.UI\bin\Monty.Model.pdb
 D:\Projects\MontyGit\Monty\Monty.UI\bin\MongoDB.Bson.pdb
 D:\Projects\MontyGit\Monty\Monty.UI\bin\MongoDB.Bson.xml
+D:\Projects\MontyGit\Monty\Monty.UI\bin\Castle.Core.dll
+D:\Projects\MontyGit\Monty\Monty.UI\bin\Castle.Windsor.dll
+D:\Projects\MontyGit\Monty\Monty.UI\bin\Castle.Core.xml
+D:\Projects\MontyGit\Monty\Monty.UI\bin\Castle.Windsor.xml
+D:\Projects\MontyGit\Monty\Monty.UI\bin\Monty.Repository.dll
+D:\Projects\MontyGit\Monty\Monty.UI\bin\MongoDB.Driver.dll
+D:\Projects\MontyGit\Monty\Monty.UI\bin\Monty.Repository.pdb
+D:\Projects\MontyGit\Monty\Monty.UI\bin\Monty.dll
+D:\Projects\MontyGit\Monty\Monty.UI\bin\Monty.pdb

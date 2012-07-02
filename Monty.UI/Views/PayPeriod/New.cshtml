@@ -1,13 +1,13 @@
-﻿<h2>
-    New</h2>
-@using (Html.BeginForm("Navigate", "PayPeriod"))
+﻿@model Monty.DAL.PayPeriod
+
+@using (Html.BeginForm("Save", "PayPeriod", Model))
 {
-    //@Html.TextBoxFor(m=>m.Name)
+    
     <label>
-        Name</label><input type="text" id="Name" />
+        Name</label>@Html.TextBoxFor(p=>p.Name, new {name = "Name"})
     <label>
-        Start Date</label><input type="text" id="StartDate" />
+        Start Date</label>@Html.TextBoxFor(p=>p.StartDate, new {name = "StartDate"})
     <label>
-        End Date</label><input type="text" id="EndDate" />
+        End Date</label>@Html.TextBoxFor(p=>p.EndDate, new {name = "EndDate"})
 
     <input type="submit" value="Save" name="Navigate" />}

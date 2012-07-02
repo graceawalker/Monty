@@ -5,7 +5,7 @@ using Monty.DAL;
 
 namespace Monty.Repository
 {
-    public class PayPeriodRepository
+    public class PayPeriodRepository : Monty.Repository.IPayPeriodRepository
     {
         private MongoCollection<BsonDocument> _payPeriods;
         private MongoDatabase _montyTestDb;
@@ -24,7 +24,7 @@ namespace Monty.Repository
             _montyTestDb.GetCollection("payperiod").Drop();
         }
 
-        public void AddNew(PayPeriod newPeriod)
+        public virtual void AddNew(PayPeriod newPeriod)
         {
             _payPeriods.Insert(newPeriod);
         }

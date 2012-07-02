@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IPayPeriodRepository.cs" />
     <Compile Include="PayPeriodRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegisterClasses.cs" />
@@ -54,10 +55,6 @@
     <ProjectReference Include="..\Monty.Model\Monty.Model.csproj">
       <Project>{CA050C23-B9DF-4B10-BEE8-15AE911D0547}</Project>
       <Name>Monty.Model</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Monty\Monty.csproj">
-      <Project>{3BC1751E-B27D-4AB9-86BB-CD283319AE14}</Project>
-      <Name>Monty</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

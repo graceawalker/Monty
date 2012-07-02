@@ -16,6 +16,11 @@ namespace Monty.Features.StepDefs
     {
         private PayPeriodRepository _payPeriodRepo;
         BrowserSession _browser;
+        [BeforeFeature]
+        public static void SetupIOC()
+        {
+            IOC.RegisterComponents();
+        }
 
         [Given(@"I have a new system with no pay periods")]
         public void GivenIHaveANewSystemWithNoPayPeriods()
@@ -34,7 +39,7 @@ namespace Monty.Features.StepDefs
         [Given(@"I click (.*)")]
         public void GivenIClickNew(string button)
         {
-            _browser.ClickButton(button);
+            _browser.ClickLink(button);
         }
 
         [When(@"I create pay period")]

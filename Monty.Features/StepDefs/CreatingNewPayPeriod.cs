@@ -47,17 +47,17 @@ namespace Monty.Features.StepDefs
         {
             foreach (var row in table.Rows)
             {
-                _browser.FillIn("Name").With(row["Name"]);
-                _browser.FillIn("StartDate").With(row["StartDate"]);
-                _browser.FillIn("EndDate").With(row["EndDate"]);
-                _browser.ClickButton("Save");
+                _browser.FillIn("PayPeriod.PayPeriodName").With(row["Name"]);
+                _browser.FillIn("PayPeriod.StartDate").With(row["StartDate"]);
+                _browser.FillIn("PayPeriod.EndDate").With(row["EndDate"]);
+                _browser.ClickButton("Create");
             }
         }
 
         [Then(@"I should see (.*) in the existing pay periods")]
         public void ThenIShouldSeeJuneTestInTheExistingPayPeriods(string payPeriod)
         {
-            _payPeriodRepo.GetPayPeriodByName(payPeriod).ShouldNotBe(null);
+            _browser.HasContent(payPeriod).ShouldBe(true);
         }
 
         public void Navigate(string page)

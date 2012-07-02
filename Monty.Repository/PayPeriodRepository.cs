@@ -31,7 +31,7 @@ namespace Monty.Repository
 
         public PayPeriod GetPayPeriodByName(string payPeriodName)
         {
-            var query = new QueryDocument("Name", payPeriodName);
+            var query = new QueryDocument("PayPeriodName", payPeriodName);
             return _payPeriods.FindOneAs<PayPeriod>(query);
 
         }
@@ -48,7 +48,7 @@ namespace Monty.Repository
 
         public void Delete(string name)
         {
-            var query = new QueryDocument("Name", name);
+            var query = new QueryDocument("PayPeriodName", name);
             _payPeriods.Remove(query);
         }
     }

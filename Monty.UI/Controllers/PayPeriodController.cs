@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Monty.DAL;
 using Monty.Repository;
+using Monty.UI.Models.PayPeriodModels;
 
 namespace Monty.UI.Controllers
 {
@@ -21,14 +22,14 @@ namespace Monty.UI.Controllers
 
         public ActionResult New()
         {
-            return View(new PayPeriod("","",""));
+            return View(new PayPeriodModel { PayPeriod = new PayPeriod()});
         }
 
         [HttpPost]
-        public ActionResult Save()
+        public ActionResult Save(PayPeriodModel model)
         {
-             _payPeriodRepository.AddNew(new PayPeriod("","",""));
-            return RedirectToAction("New", "PayPeriod");
+            _payPeriodRepository.AddNew(model.PayPeriod);
+            return RedirectToAction("Existing", "PayPeriod");
         }
 
         public ActionResult Index()
@@ -38,7 +39,8 @@ namespace Monty.UI.Controllers
 
         public ActionResult Existing()
         {
-            return View();
+            var existing = _payPeriodRepository.GetAllPayPeriods();
+            return View((new PayPeriodModel { ExistingPayPeriods = existing}));
         }
     }
 }

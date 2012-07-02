@@ -1,13 +1,16 @@
-﻿@model Monty.DAL.PayPeriod
+﻿@model Monty.UI.Models.PayPeriodModels.PayPeriodModel
 
-@using (Html.BeginForm("Save", "PayPeriod", Model))
+@using (Html.BeginForm("Save", "PayPeriod"))
 {
+    <fieldset>
+        <label>
+        Name</label>@Html.TextBoxFor(p => p.PayPeriod.PayPeriodName)
+    <label>
+        Start Date</label>@Html.TextBoxFor(p => p.PayPeriod.StartDate)
+    <label>
+        End Date</label>@Html.TextBoxFor(p => p.PayPeriod.EndDate)
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>}
     
-    <label>
-        Name</label>@Html.TextBoxFor(p=>p.Name, new {name = "Name"})
-    <label>
-        Start Date</label>@Html.TextBoxFor(p=>p.StartDate, new {name = "StartDate"})
-    <label>
-        End Date</label>@Html.TextBoxFor(p=>p.EndDate, new {name = "EndDate"})
-
-    <input type="submit" value="Save" name="Navigate" />}

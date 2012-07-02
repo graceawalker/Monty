@@ -33,7 +33,7 @@ namespace Monty.Tests
             var repo = new PayPeriodRepository();
             repo.ClearAllPayPeriods();
             repo.AddNew(new PayPeriod("Test", "02/02/2012", "01/01/2012"));
-            repo.GetPayPeriodByName("Test").Name.ShouldBe("Test");
+            repo.GetPayPeriodByName("Test").PayPeriodName.ShouldBe("Test");
         }
 
         [Test]
@@ -43,7 +43,7 @@ namespace Monty.Tests
             repo.ClearAllPayPeriods();
             repo.AddNew(new PayPeriod("Test", "03/01/2012", "01/01/2012"));
             var original = repo.GetPayPeriodByName("Test");
-            original.Name = "TestChange";
+            original.PayPeriodName = "TestChange";
             original.StartDate = new DateTimeOffset(new DateTime(2012, 1, 1));
             original.EndDate = new DateTimeOffset(new DateTime(2012, 4, 4));
             repo.Update(original);

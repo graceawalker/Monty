@@ -9,9 +9,13 @@ namespace Monty.DAL
 {
     public class PayPeriod
     {
+        public PayPeriod()
+        {
+
+        }
         public PayPeriod(string name, string startDate, string endDate)
         {
-            Name = name;
+            PayPeriodName = name;
             DateTime parsed;
             DateTime.TryParse(startDate, out parsed);
             StartDate = parsed;
@@ -23,7 +27,7 @@ namespace Monty.DAL
         [BsonId]
         public ObjectId Id { get; set; }
         [BsonElement]
-        public string Name { get; set; }
+        public string PayPeriodName { get; set; }
    
         public DateTimeOffset StartDate { get; set; }
     }

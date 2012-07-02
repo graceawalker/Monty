@@ -37,7 +37,7 @@ namespace Monty.Features.StepDefs
         public void ThenItShouldHaveDetails(Table table)
         {
             var row = table.Rows[0];
-            _currentPayPeriods.FirstOrDefault().Name.ShouldBe(row["Name"]);
+            _currentPayPeriods.FirstOrDefault().PayPeriodName.ShouldBe(row["Name"]);
             _currentPayPeriods.FirstOrDefault().StartDate.ShouldBe(Convert.ToDateTime(row["StartDate"]));
             _currentPayPeriods.FirstOrDefault().EndDate.ShouldBe(Convert.ToDateTime(row["EndDate"]));
         }
@@ -55,7 +55,7 @@ namespace Monty.Features.StepDefs
             foreach (var row in table.Rows)
             {
                 var newPeriod = new PayPeriod(row["Name"], row["StartDate"], row["EndDate"]);
-                _currentPayPeriods.ShouldContain(i=>i.Name == newPeriod.Name);
+                _currentPayPeriods.ShouldContain(i=>i.PayPeriodName == newPeriod.PayPeriodName);
                 _currentPayPeriods.ShouldContain(i => i.StartDate== newPeriod.StartDate);
                 _currentPayPeriods.ShouldContain(i => i.EndDate == newPeriod.EndDate);
             }
@@ -66,7 +66,7 @@ namespace Monty.Features.StepDefs
         {
             var payPeriod = _payPeriodRepo.GetPayPeriodByName(name);
             var row = table.Rows[0];
-            payPeriod.Name = row["Name"];
+            payPeriod.PayPeriodName = row["Name"];
             payPeriod.StartDate = Convert.ToDateTime(row["StartDate"]);
             payPeriod.EndDate = Convert.ToDateTime(row["EndDate"]);
             _payPeriodRepo.Update(payPeriod);

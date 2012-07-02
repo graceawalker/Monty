@@ -1,5 +1,27 @@
-﻿@{
-    ViewBag.Title = "PayPeriod";
-}
-
-<h2>Existing</h2>
+﻿@model Monty.UI.Models.PayPeriodModels.PayPeriodModel
+<fieldset>
+    <table>
+        <tr>
+            <td>
+                Name
+            </td>
+            <td>
+                Start
+            </td>
+            <td>
+                End
+            </td>
+        </tr>
+        @foreach (var pp in Model.ExistingPayPeriods)
+        {
+            <tr>
+                <td>@pp.PayPeriodName
+                </td>
+                <td>@pp.StartDate
+                </td>
+                <td>@pp.EndDate
+                </td>
+            </tr>
+        }
+    </table>
+</fieldset>

@@ -1,4 +1,5 @@
 ﻿using System;
+using MongoDB.Bson;
 using Monty.DAL;
 using System.Collections.Generic;
 namespace Monty.Repository
@@ -11,5 +12,6 @@ namespace Monty.Repository
         IEnumerable<PayPeriod> GetAllPayPeriods();
         PayPeriod GetPayPeriodByName(string payPeriodName);
         void Update(PayPeriod payPeriod);
+        PayPeriod GetPayPeriodById(ObjectId id);
     }
 }

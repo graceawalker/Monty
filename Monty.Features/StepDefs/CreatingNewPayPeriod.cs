@@ -42,8 +42,8 @@ namespace Monty.Features.StepDefs
             _browser.ClickLink(button);
         }
 
-        [When(@"I create pay period")]
-        public void WhenICreatePayPeriod(Table table)
+        [When(@"I create pay periods")]
+        public void WhenICreatePayPeriods(Table table)
         {
             foreach (var row in table.Rows)
             {
@@ -57,6 +57,7 @@ namespace Monty.Features.StepDefs
         [Then(@"I should see (.*) in the existing pay periods")]
         public void ThenIShouldSeeJuneTestInTheExistingPayPeriods(string payPeriod)
         {
+            _browser.Visit("PayPeriod/Existing");
             _browser.HasContent(payPeriod).ShouldBe(true);
         }
 

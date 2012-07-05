@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using MongoDB.Bson;
 using NUnit.Framework;
 using Monty.UI.Controllers;
 using Moq;
@@ -18,20 +19,25 @@ namespace Monty.Tests.Controller
         PayPeriodController _controllerUnderTest;
         PayPeriod _payPeriodToSave;
 
-        [Test]
-        public override void When()
+        protected override void Given()
         {
             _payPeriodToSave = new PayPeriod("Test", "1/1/2012", "1/1/2012");
             _payPeriodRepo = new Mock<IPayPeriodRepository>();
             _controllerUnderTest = new PayPeriodController(_payPeriodRepo.Object);
+        }
+
+        protected override void When()
+        {
             _controllerUnderTest.Save(new PayPeriodModel { PayPeriod = _payPeriodToSave });
         }
 
         [Test]
-        public override void Then()
+        public void Then()
         {
             _payPeriodRepo.Verify(p => p.AddNew(It.IsAny<PayPeriod>()));
         }
+
+
     }
 
     [TestFixture]
@@ -41,18 +47,49 @@ namespace Monty.Tests.Controller
         PayPeriodController _controllerUnderTest;
         PayPeriod _payPeriodToSave;
 
-        [Test]
-        public override void When()
+        protected override void Given()
         {
             _payPeriodRepo = new Mock<IPayPeriodRepository>();
             _controllerUnderTest = new PayPeriodController(_payPeriodRepo.Object);
+        }
+
+        protected override void When()
+        {     
             _controllerUnderTest.Existing();
         }
 
         [Test]
-        public override void Then()
+        public void Then()
         {
             _payPeriodRepo.Verify(p => p.GetAllPayPeriods());
+        }
+
+
+    }
+
+    [TestFixture]
+    public class When_existing_payperiod_is_edited : TestSetup
+    {
+        Mock<IPayPeriodRepository> _payPeriodRepo;
+        PayPeriodController _controllerUnderTest;
+
+        protected override void Given()
+        {
+            //TODO: Clear DB and add pp to test
+            _payPeriodRepo = new Mock<IPayPeriodRepository>();
+            _controllerUnderTest = new PayPeriodController(_payPeriodRepo.Object);
+        }
+
+        protected override void When()
+        {
+            //TODO: Add functionality to this method
+            _controllerUnderTest.Existing("","","");
+        }
+
+        [Test]
+        public void Then()
+        {
+            _payPeriodRepo.Verify(p => p.Update(It.IsAny<PayPeriod>()));
         }
     }
 }

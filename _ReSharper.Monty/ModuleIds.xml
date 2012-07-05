@@ -4,4 +4,5 @@
   <Module PersistentId="CA050C23-B9DF-4B10-BEE8-15AE911D0547" ModuleId="Monty.Model" />
   <Module PersistentId="C2F2EA78-F844-48F8-BCD8-F64A6D637898" ModuleId="Monty.Features" />
   <Module PersistentId="8DE8BC45-4D56-4475-87D5-07D00153D0B6" ModuleId="Monty.UI" />
+  <Module PersistentId="3BC1751E-B27D-4AB9-86BB-CD283319AE14" ModuleId="Monty" />
 </Modules>

@@ -74,6 +74,11 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EditingPayPeriods.feature.cs">
+      <DependentUpon>EditingPayPeriods.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="CreatingANewPayPeriod.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -94,6 +99,10 @@
     <None Include="ConfiguringPayPeriod.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>ConfiguringPayPeriod.feature.cs</LastGenOutput>
+    </None>
+    <None Include="EditingPayPeriods.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>EditingPayPeriods.feature.cs</LastGenOutput>
     </None>
     <None Include="CreatingANewPayPeriod.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

@@ -16,20 +16,19 @@ namespace Monty.UI.Controllers
         public PayPeriodController(IPayPeriodRepository payPeriodRepos)
         {
             _payPeriodRepository = payPeriodRepos;
-        }
-        //
+        }//
         // GET: /PayPeriod/
 
         public ActionResult New()
         {
-            return View(new PayPeriodModel { PayPeriod = new PayPeriod()});
+            return View(new PayPeriodModel { PayPeriod = new PayPeriod() });
         }
 
         [HttpPost]
         public ActionResult Save(PayPeriodModel model)
         {
             _payPeriodRepository.AddNew(model.PayPeriod);
-            return RedirectToAction("Existing", "PayPeriod");
+            return RedirectToAction("New", "PayPeriod");
         }
 
         public ActionResult Index()
@@ -37,10 +36,20 @@ namespace Monty.UI.Controllers
             return View();
         }
 
+        [HttpPost]
+        public void Existing(string value, string name, string id)
+        {
+            //if(name == "name")
+               
+            //    if(name == "startDate")
+
+            //        if(name == "endDate")
+        }
+
         public ActionResult Existing()
         {
             var existing = _payPeriodRepository.GetAllPayPeriods();
-            return View((new PayPeriodModel { ExistingPayPeriods = existing}));
+            return View((new PayPeriodModel { ExistingPayPeriods = existing }));
         }
     }
 }

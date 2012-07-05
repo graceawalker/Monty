@@ -8,15 +8,15 @@ namespace Monty.Tests.Controller
 {
     public abstract class TestSetup
     {
-        public abstract void When();
-        public abstract void Then();
+        protected abstract void Given();
+        protected abstract void When();
 
         [SetUp]
-        public void Setup()
+        public void BeforeEachTest()
         {
             IOC.RegisterComponents();
+            Given();
             When();
-            Then();
         }
     }
 }

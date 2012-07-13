@@ -53,3 +53,14 @@ D:\GitProjects\Monty\Monty.Repository\bin\Debug\MongoDB.Driver.xml
 D:\GitProjects\Monty\Monty.Repository\obj\Debug\ResolveAssemblyReference.cache
 D:\GitProjects\Monty\Monty.Repository\obj\Debug\Monty.Repository.dll
 D:\GitProjects\Monty\Monty.Repository\obj\Debug\Monty.Repository.pdb
+C:\Monty\Monty\Monty.Repository\bin\Debug\Monty.Repository.dll
+C:\Monty\Monty\Monty.Repository\bin\Debug\Monty.Repository.pdb
+C:\Monty\Monty\Monty.Repository\bin\Debug\Monty.Model.dll
+C:\Monty\Monty\Monty.Repository\bin\Debug\Monty.Model.pdb
+C:\Monty\Monty\Monty.Repository\bin\Debug\MongoDB.Bson.pdb
+C:\Monty\Monty\Monty.Repository\bin\Debug\MongoDB.Bson.xml
+C:\Monty\Monty\Monty.Repository\bin\Debug\MongoDB.Driver.pdb
+C:\Monty\Monty\Monty.Repository\bin\Debug\MongoDB.Driver.xml
+C:\Monty\Monty\Monty.Repository\obj\Debug\ResolveAssemblyReference.cache
+C:\Monty\Monty\Monty.Repository\obj\Debug\Monty.Repository.dll
+C:\Monty\Monty\Monty.Repository\obj\Debug\Monty.Repository.pdb

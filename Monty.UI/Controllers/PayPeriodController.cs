@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MongoDB.Bson;
 using Monty.DAL;
 using Monty.Repository;
 using Monty.UI.Models.PayPeriodModels;
@@ -39,11 +40,14 @@ namespace Monty.UI.Controllers
         [HttpPost]
         public void Existing(string value, string name, string id)
         {
-            //if(name == "name")
-               
-            //    if(name == "startDate")
-
-            //        if(name == "endDate")
+            var payPeriod = _payPeriodRepository.GetPayPeriodById(id);
+            if (name == "name")
+                payPeriod.PayPeriodName = value;
+            if (name == "startDate")
+                payPeriod.StartDate = Convert.ToDateTime(value);
+            if (name == "endDate")
+                payPeriod.EndDate = Convert.ToDateTime(value);
+            _payPeriodRepository.Update(payPeriod);
         }
 
         public ActionResult Existing()

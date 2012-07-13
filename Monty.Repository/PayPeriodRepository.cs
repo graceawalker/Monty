@@ -46,7 +46,7 @@ namespace Monty.Repository
             _payPeriods.Save(payPeriod);
         }
 
-        public PayPeriod GetPayPeriodById(ObjectId id)
+        public PayPeriod GetPayPeriodById(string id)
         {
             var query = new QueryDocument("_id", id);
             return _payPeriods.FindOneAs<PayPeriod>(query);

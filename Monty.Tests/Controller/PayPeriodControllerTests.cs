@@ -75,14 +75,13 @@ namespace Monty.Tests.Controller
 
         protected override void Given()
         {
-            //TODO: Clear DB and add pp to test
+            new PayPeriodRepository().ClearAllPayPeriods();
             _payPeriodRepo = new Mock<IPayPeriodRepository>();
             _controllerUnderTest = new PayPeriodController(_payPeriodRepo.Object);
         }
 
         protected override void When()
         {
-            //TODO: Add functionality to this method
             _controllerUnderTest.Existing("","","");
         }
 

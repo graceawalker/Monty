@@ -25,7 +25,7 @@ namespace Monty.DAL
         }
         public DateTimeOffset EndDate { get; set; }
         [BsonId]
-        public ObjectId Id { get; set; }
+        public string Id { get; set; }
         [BsonElement]
         public string PayPeriodName { get; set; }
    

@@ -90,7 +90,9 @@ testRunner.Given("I have a new system with pay periods", ((string)(null)), table
 #line 8
 testRunner.When("I view existing pay periods");
 #line 9
-testRunner.And("I click to edit JuneTest");
+testRunner.And("I edit JuneTest to July");
+#line 10
+testRunner.Then("I should see July in the existing pay periods");
 #line hidden
             this.ScenarioCleanup();
         }

@@ -12,6 +12,6 @@ namespace Monty.Repository
         IEnumerable<PayPeriod> GetAllPayPeriods();
         PayPeriod GetPayPeriodByName(string payPeriodName);
         void Update(PayPeriod payPeriod);
-        PayPeriod GetPayPeriodById(ObjectId id);
+        PayPeriod GetPayPeriodById(string id);
     }
 }

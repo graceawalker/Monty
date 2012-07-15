@@ -21,7 +21,6 @@ D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\Monty.Repository.dll
 D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\nunit.framework.dll
 D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\Shouldly.dll
 D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\MongoDB.Driver.dll
-D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\MongoDB.Bson.dll
 D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\Monty.Repository.pdb
 D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\nunit.framework.xml
 D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\Shouldly.pdb
@@ -131,3 +130,5 @@ C:\Monty\Monty\Monty.Tests\bin\Debug\MongoDB.Driver.xml
 C:\Monty\Monty\Monty.Tests\obj\Debug\ResolveAssemblyReference.cache
 C:\Monty\Monty\Monty.Tests\obj\Debug\Monty.Tests.dll
 C:\Monty\Monty\Monty.Tests\obj\Debug\Monty.Tests.pdb
+D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\MongoDB.Driver.pdb
+D:\Projects\MontyGit\Monty\Monty.Tests\bin\Debug\MongoDB.Driver.xml

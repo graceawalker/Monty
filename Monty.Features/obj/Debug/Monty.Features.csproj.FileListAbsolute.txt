@@ -168,3 +168,5 @@ C:\Monty\Monty\Monty.Features\bin\Debug\MongoDB.Driver.xml
 C:\Monty\Monty\Monty.Features\obj\Debug\ResolveAssemblyReference.cache
 C:\Monty\Monty\Monty.Features\obj\Debug\Monty.Features.dll
 C:\Monty\Monty\Monty.Features\obj\Debug\Monty.Features.pdb
+D:\Projects\MontyGit\Monty\Monty.Features\bin\Debug\MongoDB.Driver.pdb
+D:\Projects\MontyGit\Monty\Monty.Features\bin\Debug\MongoDB.Driver.xml

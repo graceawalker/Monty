@@ -45,7 +45,6 @@ namespace Monty.Tests.Controller
     {
         Mock<IPayPeriodRepository> _payPeriodRepo;
         PayPeriodController _controllerUnderTest;
-        PayPeriod _payPeriodToSave;
 
         protected override void Given()
         {

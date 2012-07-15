@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson;
+using MongoDB.Bson.Serialization.IdGenerators;
 
 namespace Monty.DAL
 {
@@ -24,7 +25,7 @@ namespace Monty.DAL
 
         }
         public DateTimeOffset EndDate { get; set; }
-        [BsonId]
+        [BsonId(IdGenerator = typeof(StringObjectIdGenerator))]
         public string Id { get; set; }
         [BsonElement]
         public string PayPeriodName { get; set; }

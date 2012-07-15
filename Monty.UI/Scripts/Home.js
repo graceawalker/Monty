@@ -3,14 +3,11 @@
         isEditable = target.contentEditable,
      data = {};
 
-
-    if (isEditable || e.keyCode == 13) {
+    if (target.className == "editPayPeriod") {
         data.value = $(target).html();
         data.name = target.getAttribute('data-type');
         data.id = target.getAttribute('data-id');
 
-        alert(JSON.stringify(data));
-        
         $.ajax({
             url: window.location.toString(),
             data: data,

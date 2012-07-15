@@ -1,7 +1,6 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
 @model Monty.UI.Models.PayPeriodModels.PayPeriodModel
 <fieldset>
     <table>
@@ -18,15 +17,18 @@
         </tr>
         @foreach (var pp in Model.ExistingPayPeriods)
         {
+
             <tr>
-                <td><div contenteditable class="payPeriod" data-type="name" data-id="@pp.Id">@pp.PayPeriodName</div>
+                <td>
+                    <div contenteditable class="editPayPeriod" data-type="name" data-id="@pp.Id">@pp.PayPeriodName</div>
                 </td>
-                <td><div contenteditable class="payPeriod" data-type="startDate" data-id="@pp.Id">@pp.StartDate</div>
+                <td>
+                    <div contenteditable class="editPayPeriod" data-type="startDate" data-id="@pp.Id">@pp.StartDate</div>
                 </td>
-                <td><div contenteditable class="payPeriod" data-type="endDate" data-id="@pp.Id">@pp.EndDate</div>
+                <td>
+                    <div contenteditable class="editPayPeriod" data-type="endDate" data-id="@pp.Id">@pp.EndDate</div>
                 </td>
             </tr>
         }
     </table>
-    <div id="debug"></div>
 </fieldset>

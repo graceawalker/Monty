@@ -72,14 +72,16 @@ namespace Monty.Features.StepDefs
         [When(@"I edit (.*) to (.*)")]
         public void WhenIEdit(string payPeriod, string edit)
         {
-            var element = _browser.FindAllCss(".payPeriod").FirstOrDefault(e => e.Text == payPeriod);
+            var element = _browser.FindAllCss(".editPayPeriod").FirstOrDefault(e => e.Text == payPeriod);
             _browser.FillIn(element).With(edit, true);
+            _browser.ExecuteScript("$(\"[data-type='name']\").trigger(\"blur\");");
+
         }
 
         public void Navigate(string page)
         {
             if (_browser == null)
-                _browser = new BrowserSession(new SessionConfiguration { AppHost = "localhost", Port = 99 });
+                _browser = new BrowserSession(new SessionConfiguration { AppHost = "localhost", Port = 99, Driver = typeof(SeleniumWebDriver) });
             _browser.Visit(page);
             if (_browser.HasContent("HTTP 404")) Assert.Fail("Page {0} does not exist", page);
         }

@@ -91,3 +91,5 @@ C:\Monty\Monty\Monty.UI\bin\MongoDB.Driver.xml
 C:\Monty\Monty\Monty.UI\obj\Debug\ResolveAssemblyReference.cache
 C:\Monty\Monty\Monty.UI\obj\Debug\Monty.UI.dll
 C:\Monty\Monty\Monty.UI\obj\Debug\Monty.UI.pdb
+D:\Projects\MontyGit\Monty\Monty.UI\bin\MongoDB.Driver.pdb
+D:\Projects\MontyGit\Monty\Monty.UI\bin\MongoDB.Driver.xml

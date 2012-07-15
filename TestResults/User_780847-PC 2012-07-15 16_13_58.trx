@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="796e5ccd-3bd7-4982-8062-efc954362e7a" name="User@780847-PC 2012-07-15 16:13:58" runUser="780847-PC\User" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="d8b9ca7c-7854-4490-a316-21eb3cde8ced">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="User_780847-PC 2012-07-15 16_13_58">
+      <DeploymentItem filename="D:\Projects\MontyGit\Monty\packages\Castle.Core.3.0.0.4001\lib\net40-client\Castle.Core.dll" />
+      <DeploymentItem filename="D:\Projects\MontyGit\Monty\packages\Shouldly.1.1.1.1\lib\35\Shouldly.dll" />
+      <DeploymentItem filename="D:\Projects\MontyGit\Monty\packages\DotNetZip.1.9.1.8\lib\net20\Ionic.Zip.dll" />
+      <DeploymentItem filename="D:\Projects\MontyGit\Monty\Monty.Model\bin\Debug\Monty.Model.dll" />
+      <DeploymentItem filename="D:\Projects\MontyGit\Monty\packages\Castle.Windsor.3.0.0.4001\lib\net40\Castle.Windsor.dll" />
+      <DeploymentItem filename="D:\Projects\MontyGit\Monty\packages\Coypu.0.10.1\lib\net40\Coypu.dll" />
+      <DeploymentItem filename="D:\Projects\MontyGit\Monty\packages\SpecFlow.1.8.1\lib\net35\TechTalk.SpecFlow.dll" />
+      <DeploymentItem filename="D:\Projects\MontyGit\Monty\packages\Newtonsoft.Json.4.5.1\lib\net40\Newtonsoft.Json.dll" />
+      <DeploymentItem filename="D:\Projects\MontyGit\Monty\Monty.Repository\bin\Debug\Monty.Repository.dll" />
+      <DeploymentItem filename="D:\Projects\MontyGit\Monty\Monty\bin\Debug\Monty.dll" />
+      <DeploymentItem filename="D:\Projects\MontyGit\Monty\packages\NUnit.2.6.0.12054\lib\nunit.framework.dll" />
+      <DeploymentItem filename="D:\Projects\MontyGit\Monty\packages\Selenium.WebDriver.2.23.0\lib\net40\WebDriver.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-07-15T16:13:58.9192276+01:00" queuing="2012-07-15T16:13:59.8152789+01:00" start="2012-07-15T16:13:59.8762824+01:00" finish="2012-07-15T16:14:17.0322636+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="EditExistingPayPeriod" storage="d:\projects\montygit\monty\monty.features\bin\debug\monty.features.dll" id="a28af8aa-8930-3924-e306-3265983800cc">
+      <Description>Edit existing pay period</Description>
+      <Execution id="cfffc70d-a738-454e-b73d-f07d4d221cca" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Editing pay periods</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Projects/MontyGit/Monty/Monty.Features/bin/Debug/Monty.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Monty.Features.EditingPayPeriodsFeature, Monty.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EditExistingPayPeriod" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="a28af8aa-8930-3924-e306-3265983800cc" executionId="cfffc70d-a738-454e-b73d-f07d4d221cca" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="cfffc70d-a738-454e-b73d-f07d4d221cca" testId="a28af8aa-8930-3924-e306-3265983800cc" testName="EditExistingPayPeriod" computerName="780847-PC" duration="00:00:16.6892701" startTime="2012-07-15T16:13:59.9292854+01:00" endTime="2012-07-15T16:14:16.9662599+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cfffc70d-a738-454e-b73d-f07d4d221cca">
+      <Output>
+        <StdOut>Given I have a new system with pay periods
+  --- table step argument ---
+  | Name     | StartDate | EndDate  |
+  | JuneTest | 1/1/2012  | 2/2/2012 |
+-&gt; done: ConfiguringPayPeriod.GivenIHaveANewSystemWithPayPeriods(&lt;table&gt;) (0.2s)
+When I view existing pay periods
+-&gt; done: CreatingNewPayPeriod.WhenIViewExistingPayPeriods() (9.9s)
+And I edit JuneTest to July
+-&gt; done: CreatingNewPayPeriod.WhenIEdit("JuneTest", "July") (0.5s)
+Then I should see July in the existing pay periods
+-&gt; error: 
+    _browser.HasContent(payPeriod)
+        should be
+    True
+        but was
+    False</StdOut>
+        <ErrorInfo>
+          <Message>Test method Monty.Features.EditingPayPeriodsFeature.EditExistingPayPeriod threw exception: 
+Shouldly.ChuckedAWobbly: 
+    _browser.HasContent(payPeriod)
+        should be
+    True
+        but was
+    False</Message>
+          <StackTrace>    at Shouldly.ShouldlyCoreExtensions.AssertAwesomely[T](T actual, IResolveConstraint specifiedConstraint, Object originalActual, Object originalExpected) in d:\BuildAgent-01\work\462bd6a773f7a920\src\Shouldly\ShouldlyCoreExtensions.cs:line 12
+   at Shouldly.ShouldBeTestExtensions.ShouldBe[T](T actual, T expected) in d:\BuildAgent-01\work\462bd6a773f7a920\src\Shouldly\ShouldBeTestExtensions.cs:line 14
+   at Monty.Features.StepDefs.CreatingNewPayPeriod.ThenIShouldSeeJuneTestInTheExistingPayPeriods(String payPeriod) in D:\Projects\MontyGit\Monty\Monty.Features\StepDefs\CreatingNewPayPeriod.cs:line 63
+   at lambda_method(Closure , IContextManager , String )
+   at TechTalk.SpecFlow.Bindings.MethodBinding.InvokeAction(IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Bindings.StepDefinitionBinding.Invoke(IContextManager contextManager, ITestTracer testTracer, Object[] arguments, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepArgs stepArgs)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Monty.Features.EditingPayPeriodsFeature.ScenarioCleanup() in D:\Projects\MontyGit\Monty\Monty.Features\EditingPayPeriods.feature.cs:line 0
+   at Monty.Features.EditingPayPeriodsFeature.EditExistingPayPeriod() in d:\Projects\MontyGit\Monty\Monty.Features\EditingPayPeriods.feature:line 10
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

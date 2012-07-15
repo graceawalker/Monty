@@ -85,9 +85,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CreatingANewPayPeriod.feature</DependentUpon>
     </Compile>
-    <Compile Include="StepDefs\ConfiguringPayPeriod.cs" />
-    <Compile Include="ConfiguringPayPeriod.feature.cs">
-      <DependentUpon>ConfiguringPayPeriod.feature</DependentUpon>
+    <Compile Include="StepDefs\PayPeriodRepo.cs" />
+    <Compile Include="PayPeriodRepoTests.feature.cs">
+      <DependentUpon>PayPeriodRepoTests.feature</DependentUpon>
       <SubType>Code</SubType>
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -97,9 +97,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ConfiguringPayPeriod.feature">
+    <None Include="PayPeriodRepoTests.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>ConfiguringPayPeriod.feature.cs</LastGenOutput>
+      <LastGenOutput>PayPeriodRepoTests.feature.cs</LastGenOutput>
     </None>
     <None Include="EditingPayPeriods.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

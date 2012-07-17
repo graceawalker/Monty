@@ -28,6 +28,9 @@
                 <td>
                     <div contenteditable class="editPayPeriod" data-type="endDate" data-id="@pp.Id">@pp.EndDate</div>
                 </td>
+                <td>
+                    <div>@Html.ActionLink("Delete", "Delete","PayPeriod", new { payPeriodId = @pp.Id }, null)</div>
+                </td>
             </tr>
         }
     </table>

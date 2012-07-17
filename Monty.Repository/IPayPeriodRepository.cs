@@ -13,5 +13,6 @@ namespace Monty.Repository
         PayPeriod GetPayPeriodByName(string payPeriodName);
         void Update(PayPeriod payPeriod);
         PayPeriod GetPayPeriodById(string id);
+        void DeleteById(string payPeriodId);
     }
 }

@@ -64,6 +64,17 @@ namespace Monty.Tests
         }
 
         [Test]
+        public void Should_delete_pay_period_by_id()
+        {
+            var repo = new PayPeriodRepository();
+            repo.ClearAllPayPeriods();
+            repo.AddNew(new PayPeriod("Test", "02/02/2012", "02/02/2012"));
+            var id = repo.GetPayPeriodByName("Test").Id;
+            repo.DeleteById(id);
+            repo.GetPayPeriodByName("Test").ShouldBe(null);
+        }
+
+        [Test]
         public void Should_get_pay_period_by_id()
         {
             var repo = new PayPeriodRepository();

@@ -57,5 +57,12 @@ namespace Monty.Repository
             var query = new QueryDocument("PayPeriodName", name);
             _payPeriods.Remove(query);
         }
+
+
+        public void DeleteById(string payPeriodId)
+        {
+            var query = new QueryDocument("_id", payPeriodId);
+            _payPeriods.Remove(query);
+        }
     }
 }

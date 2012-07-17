@@ -1,0 +1,629 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="fc69ada7-0637-4e41-8980-479b53231c49" name="User@780847-PC 2012-07-17 19:16:33" runUser="780847-PC\User" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="d8b9ca7c-7854-4490-a316-21eb3cde8ced">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment userDeploymentRoot="D:\Projects\MontyGit\Monty\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="User_780847-PC 2012-07-17 19_16_33">
+      <DeploymentItem filename="D:\Projects\MontyGit\Monty\packages\Castle.Core.3.0.0.4001\lib\net40-client\Castle.Core.dll" />
+      <DeploymentItem filename="D:\Projects\MontyGit\Monty\packages\Shouldly.1.1.1.1\lib\35\Shouldly.dll" />
+      <DeploymentItem filename="D:\Projects\MontyGit\Monty\packages\DotNetZip.1.9.1.8\lib\net20\Ionic.Zip.dll" />
+      <DeploymentItem filename="D:\Projects\MontyGit\Monty\Monty.Model\bin\Debug\Monty.Model.dll" />
+      <DeploymentItem filename="D:\Projects\MontyGit\Monty\packages\Castle.Windsor.3.0.0.4001\lib\net40\Castle.Windsor.dll" />
+      <DeploymentItem filename="D:\Projects\MontyGit\Monty\packages\Coypu.0.10.1\lib\net40\Coypu.dll" />
+      <DeploymentItem filename="D:\Projects\MontyGit\Monty\packages\SpecFlow.1.8.1\lib\net35\TechTalk.SpecFlow.dll" />
+      <DeploymentItem filename="D:\Projects\MontyGit\Monty\packages\Newtonsoft.Json.4.5.1\lib\net40\Newtonsoft.Json.dll" />
+      <DeploymentItem filename="D:\Projects\MontyGit\Monty\Monty.Repository\bin\Debug\Monty.Repository.dll" />
+      <DeploymentItem filename="D:\Projects\MontyGit\Monty\Monty\bin\Debug\Monty.dll" />
+      <DeploymentItem filename="D:\Projects\MontyGit\Monty\packages\NUnit.2.6.0.12054\lib\nunit.framework.dll" />
+      <DeploymentItem filename="D:\Projects\MontyGit\Monty\packages\Selenium.WebDriver.2.23.0\lib\net40\WebDriver.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-07-17T19:16:33.8988578+01:00" queuing="2012-07-17T19:16:33.9048581+01:00" start="2012-07-17T19:16:33.9168588+01:00" finish="2012-07-17T19:16:42.6168978+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="8" executed="8" error="0" failed="8" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="EditingAPayPeriod" storage="d:\projects\montygit\monty\monty.features\bin\debug\monty.features.dll" id="3035dfcc-ffed-344e-6de8-49b3c87e7293">
+      <Description>Editing a pay period</Description>
+      <Execution id="0366187d-adac-462e-8c06-5c51b15c8d01" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Configuring Pay Period</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Projects/MontyGit/Monty/Monty.Features/bin/Debug/Monty.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Monty.Features.ConfiguringPayPeriodFeature, Monty.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EditingAPayPeriod" />
+    </UnitTest>
+    <UnitTest name="CreateMultiplePayPeriods" storage="d:\projects\montygit\monty\monty.features\bin\debug\monty.features.dll" id="88ff425b-4949-2ab8-cf4d-635d749886d0">
+      <Description>Create multiple pay periods</Description>
+      <Execution id="0191ed9b-d234-4978-980d-2442bc07f654" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Creating a new pay period</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Projects/MontyGit/Monty/Monty.Features/bin/Debug/Monty.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Monty.Features.CreatingANewPayPeriodFeature, Monty.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateMultiplePayPeriods" />
+    </UnitTest>
+    <UnitTest name="DeletingAPayPeriod" storage="d:\projects\montygit\monty\monty.features\bin\debug\monty.features.dll" id="291bea98-195c-4df5-8790-2eba9cd813e5">
+      <Description>Deleting a pay period</Description>
+      <Execution id="d70ce6f9-4ba5-43f7-821d-bffd5b754268" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Configuring Pay Period</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Projects/MontyGit/Monty/Monty.Features/bin/Debug/Monty.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Monty.Features.ConfiguringPayPeriodFeature, Monty.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DeletingAPayPeriod" />
+    </UnitTest>
+    <UnitTest name="EditExistingPayPeriod" storage="d:\projects\montygit\monty\monty.features\bin\debug\monty.features.dll" id="a28af8aa-8930-3924-e306-3265983800cc">
+      <Description>Edit existing pay period</Description>
+      <Execution id="91e7e008-9f7f-4838-ab1e-c524137a5649" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Editing pay periods</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Projects/MontyGit/Monty/Monty.Features/bin/Debug/Monty.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Monty.Features.EditingPayPeriodsFeature, Monty.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EditExistingPayPeriod" />
+    </UnitTest>
+    <UnitTest name="DeleteExistingPayPeriod" storage="d:\projects\montygit\monty\monty.features\bin\debug\monty.features.dll" id="00a68e87-1e9e-fb0b-7df4-1c5c93ddd11c">
+      <Description>Delete existing pay period</Description>
+      <Execution id="57910011-929d-414e-9c2f-5afbd78a6c48" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Editing pay periods</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Projects/MontyGit/Monty/Monty.Features/bin/Debug/Monty.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Monty.Features.EditingPayPeriodsFeature, Monty.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DeleteExistingPayPeriod" />
+    </UnitTest>
+    <UnitTest name="CreatingMultiplePayPeriods" storage="d:\projects\montygit\monty\monty.features\bin\debug\monty.features.dll" id="3a44d5bb-dade-b517-7657-0e9d53d08ed5">
+      <Description>Creating multiple pay periods</Description>
+      <Execution id="69e3cddd-e86a-48de-8889-53673d54ca99" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Configuring Pay Period</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Projects/MontyGit/Monty/Monty.Features/bin/Debug/Monty.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Monty.Features.ConfiguringPayPeriodFeature, Monty.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingMultiplePayPeriods" />
+    </UnitTest>
+    <UnitTest name="CreatingAPayPeriod" storage="d:\projects\montygit\monty\monty.features\bin\debug\monty.features.dll" id="92f07e27-fe63-cae7-e994-4b1dcfce4dcc">
+      <Description>Creating a pay period</Description>
+      <Execution id="c7028c92-8323-4ba7-b857-bea1db3abb81" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Configuring Pay Period</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Projects/MontyGit/Monty/Monty.Features/bin/Debug/Monty.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Monty.Features.ConfiguringPayPeriodFeature, Monty.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingAPayPeriod" />
+    </UnitTest>
+    <UnitTest name="CreateANewPayPeriod" storage="d:\projects\montygit\monty\monty.features\bin\debug\monty.features.dll" id="3eaba14c-e8c9-dc4d-3c2d-023646b3efbc">
+      <Description>Create a new pay period</Description>
+      <Execution id="da942bf6-fb46-482c-8678-add85656717f" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Creating a new pay period</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="D:/Projects/MontyGit/Monty/Monty.Features/bin/Debug/Monty.Features.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Monty.Features.CreatingANewPayPeriodFeature, Monty.Features, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateANewPayPeriod" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="a28af8aa-8930-3924-e306-3265983800cc" executionId="91e7e008-9f7f-4838-ab1e-c524137a5649" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3eaba14c-e8c9-dc4d-3c2d-023646b3efbc" executionId="da942bf6-fb46-482c-8678-add85656717f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="88ff425b-4949-2ab8-cf4d-635d749886d0" executionId="0191ed9b-d234-4978-980d-2442bc07f654" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3a44d5bb-dade-b517-7657-0e9d53d08ed5" executionId="69e3cddd-e86a-48de-8889-53673d54ca99" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="92f07e27-fe63-cae7-e994-4b1dcfce4dcc" executionId="c7028c92-8323-4ba7-b857-bea1db3abb81" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="291bea98-195c-4df5-8790-2eba9cd813e5" executionId="d70ce6f9-4ba5-43f7-821d-bffd5b754268" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="00a68e87-1e9e-fb0b-7df4-1c5c93ddd11c" executionId="57910011-929d-414e-9c2f-5afbd78a6c48" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3035dfcc-ffed-344e-6de8-49b3c87e7293" executionId="0366187d-adac-462e-8c06-5c51b15c8d01" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="91e7e008-9f7f-4838-ab1e-c524137a5649" testId="a28af8aa-8930-3924-e306-3265983800cc" testName="EditExistingPayPeriod" computerName="780847-PC" duration="00:00:01.1671994" startTime="2012-07-17T19:16:33.9218591+01:00" endTime="2012-07-17T19:16:35.4248742+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="91e7e008-9f7f-4838-ab1e-c524137a5649">
+      <Output>
+        <StdOut>Given I have a new system with pay periods
+  --- table step argument ---
+  | Name     | StartDate | EndDate  |
+  | JuneTest | 1/1/2012  | 2/2/2012 |
+-&gt; error: Unable to connect to server localhost:27017: No connection could be made because the target machine actively refused it 127.0.0.1:27017.
+When I view existing pay periods
+-&gt; skipped because of previous errors
+And I edit JuneTest to July
+-&gt; skipped because of previous errors
+Then I should see July in the existing pay periods
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Test method Monty.Features.EditingPayPeriodsFeature.EditExistingPayPeriod threw exception: 
+MongoDB.Driver.MongoConnectionException: Unable to connect to server localhost:27017: No connection could be made because the target machine actively refused it 127.0.0.1:27017. ---&gt; System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:27017</Message>
+          <StackTrace>    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   at MongoDB.Driver.Internal.MongoConnection.Open() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\MongoConnection.cs:line 369
+   at MongoDB.Driver.Internal.MongoConnection.SendMessage(MongoRequestMessage message, SafeMode safeMode) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\MongoConnection.cs:line 488
+   at MongoDB.Driver.Internal.MongoConnection.RunCommand(String collectionName, QueryFlags queryFlags, CommandDocument command, Boolean throwOnError) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\MongoConnection.cs:line 390
+   at MongoDB.Driver.MongoServerInstance.VerifyState(MongoConnection connection) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServerInstance.cs:line 428
+   at MongoDB.Driver.MongoServerInstance.Connect(Boolean slaveOk) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServerInstance.cs:line 348
+   at MongoDB.Driver.Internal.DirectConnector.Connect(TimeSpan timeout) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\DirectConnector.cs:line 52
+ --- End of inner exception stack trace ---
+    at MongoDB.Driver.Internal.DirectConnector.Connect(TimeSpan timeout) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\DirectConnector.cs:line 66
+   at MongoDB.Driver.MongoServer.Connect(TimeSpan timeout, ConnectWaitFor waitFor) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 590
+   at MongoDB.Driver.MongoServer.Connect(ConnectWaitFor waitFor) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 558
+   at MongoDB.Driver.MongoServer.ChooseServerInstance(Boolean slaveOk) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 1296
+   at MongoDB.Driver.MongoServer.AcquireConnection(MongoDatabase database, Boolean slaveOk) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 1188
+   at MongoDB.Driver.MongoCursorEnumerator`1.AcquireConnection() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCursorEnumerator.cs:line 210
+   at MongoDB.Driver.MongoCursorEnumerator`1.GetFirst() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCursorEnumerator.cs:line 223
+   at MongoDB.Driver.MongoCursorEnumerator`1.MoveNext() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCursorEnumerator.cs:line 141
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at MongoDB.Driver.MongoCollection.FindOneAs[TDocument](IMongoQuery query) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCollection.cs:line 526
+   at MongoDB.Driver.MongoCollection`1.FindOne(IMongoQuery query) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCollection.cs:line 1671
+   at MongoDB.Driver.MongoDatabase.RunCommandAs(Type commandResultType, IMongoCommand command) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 965
+   at MongoDB.Driver.MongoDatabase.RunCommandAs[TCommandResult](IMongoCommand command) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 942
+   at MongoDB.Driver.MongoDatabase.RunCommand(IMongoCommand command) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 920
+   at MongoDB.Driver.MongoDatabase.DropCollection(String collectionName) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 381
+   at MongoDB.Driver.MongoCollection.Drop() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCollection.cs:line 213
+   at Monty.Repository.PayPeriodRepository.ClearAllPayPeriods() in D:\Projects\MontyGit\Monty\Monty.Repository\PayPeriodRepository.cs:line 24
+   at Monty.Features.StepDefs.PayPeriodRepo.GivenIHaveANewSystemWithPayPeriods(Table table) in D:\Projects\MontyGit\Monty\Monty.Features\StepDefs\PayPeriodRepo.cs:line 21
+   at lambda_method(Closure , IContextManager , Table )
+   at TechTalk.SpecFlow.Bindings.MethodBinding.InvokeAction(IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Bindings.StepDefinitionBinding.Invoke(IContextManager contextManager, ITestTracer testTracer, Object[] arguments, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepArgs stepArgs)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Monty.Features.EditingPayPeriodsFeature.ScenarioCleanup() in D:\Projects\MontyGit\Monty\Monty.Features\EditingPayPeriods.feature.cs:line 0
+   at Monty.Features.EditingPayPeriodsFeature.EditExistingPayPeriod() in d:\Projects\MontyGit\Monty\Monty.Features\EditingPayPeriods.feature:line 10
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="da942bf6-fb46-482c-8678-add85656717f" testId="3eaba14c-e8c9-dc4d-3c2d-023646b3efbc" testName="CreateANewPayPeriod" computerName="780847-PC" duration="00:00:01.0138093" startTime="2012-07-17T19:16:35.4348742+01:00" endTime="2012-07-17T19:16:36.4548757+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="da942bf6-fb46-482c-8678-add85656717f">
+      <Output>
+        <StdOut>Given I have a new system with no pay periods
+-&gt; error: Unable to connect to server localhost:27017: No connection could be made because the target machine actively refused it 127.0.0.1:27017.
+And I launch Monty
+-&gt; skipped because of previous errors
+And I click Pay Periods
+-&gt; skipped because of previous errors
+When I click Create New
+-&gt; skipped because of previous errors
+And I create pay periods
+  --- table step argument ---
+  | Name     | StartDate | EndDate  |
+  | JuneTest | 1/1/2012  | 2/2/2012 |
+-&gt; skipped because of previous errors
+Then I should see JuneTest in the existing pay periods
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Test method Monty.Features.CreatingANewPayPeriodFeature.CreateANewPayPeriod threw exception: 
+MongoDB.Driver.MongoConnectionException: Unable to connect to server localhost:27017: No connection could be made because the target machine actively refused it 127.0.0.1:27017. ---&gt; System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:27017</Message>
+          <StackTrace>    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   at MongoDB.Driver.Internal.MongoConnection.Open() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\MongoConnection.cs:line 369
+   at MongoDB.Driver.Internal.MongoConnection.SendMessage(MongoRequestMessage message, SafeMode safeMode) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\MongoConnection.cs:line 488
+   at MongoDB.Driver.Internal.MongoConnection.RunCommand(String collectionName, QueryFlags queryFlags, CommandDocument command, Boolean throwOnError) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\MongoConnection.cs:line 390
+   at MongoDB.Driver.MongoServerInstance.VerifyState(MongoConnection connection) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServerInstance.cs:line 428
+   at MongoDB.Driver.MongoServerInstance.Connect(Boolean slaveOk) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServerInstance.cs:line 348
+   at MongoDB.Driver.Internal.DirectConnector.Connect(TimeSpan timeout) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\DirectConnector.cs:line 52
+ --- End of inner exception stack trace ---
+    at MongoDB.Driver.Internal.DirectConnector.Connect(TimeSpan timeout) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\DirectConnector.cs:line 66
+   at MongoDB.Driver.MongoServer.Connect(TimeSpan timeout, ConnectWaitFor waitFor) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 590
+   at MongoDB.Driver.MongoServer.Connect(ConnectWaitFor waitFor) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 558
+   at MongoDB.Driver.MongoServer.ChooseServerInstance(Boolean slaveOk) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 1296
+   at MongoDB.Driver.MongoServer.AcquireConnection(MongoDatabase database, Boolean slaveOk) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 1188
+   at MongoDB.Driver.MongoCursorEnumerator`1.AcquireConnection() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCursorEnumerator.cs:line 210
+   at MongoDB.Driver.MongoCursorEnumerator`1.GetFirst() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCursorEnumerator.cs:line 223
+   at MongoDB.Driver.MongoCursorEnumerator`1.MoveNext() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCursorEnumerator.cs:line 141
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at MongoDB.Driver.MongoCollection.FindOneAs[TDocument](IMongoQuery query) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCollection.cs:line 526
+   at MongoDB.Driver.MongoCollection`1.FindOne(IMongoQuery query) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCollection.cs:line 1671
+   at MongoDB.Driver.MongoDatabase.RunCommandAs(Type commandResultType, IMongoCommand command) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 965
+   at MongoDB.Driver.MongoDatabase.RunCommandAs[TCommandResult](IMongoCommand command) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 942
+   at MongoDB.Driver.MongoDatabase.RunCommand(IMongoCommand command) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 920
+   at MongoDB.Driver.MongoDatabase.DropCollection(String collectionName) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 381
+   at MongoDB.Driver.MongoCollection.Drop() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCollection.cs:line 213
+   at Monty.Repository.PayPeriodRepository.ClearAllPayPeriods() in D:\Projects\MontyGit\Monty\Monty.Repository\PayPeriodRepository.cs:line 24
+   at Monty.Features.StepDefs.CreatingNewPayPeriod.GivenIHaveANewSystemWithNoPayPeriods() in D:\Projects\MontyGit\Monty\Monty.Features\StepDefs\CreatingNewPayPeriod.cs:line 31
+   at lambda_method(Closure , IContextManager )
+   at TechTalk.SpecFlow.Bindings.MethodBinding.InvokeAction(IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Bindings.StepDefinitionBinding.Invoke(IContextManager contextManager, ITestTracer testTracer, Object[] arguments, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepArgs stepArgs)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Monty.Features.CreatingANewPayPeriodFeature.ScenarioCleanup() in D:\Projects\MontyGit\Monty\Monty.Features\CreatingANewPayPeriod.feature.cs:line 0
+   at Monty.Features.CreatingANewPayPeriodFeature.CreateANewPayPeriod() in d:\Projects\MontyGit\Monty\Monty.Features\CreatingANewPayPeriod.feature:line 12
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0191ed9b-d234-4978-980d-2442bc07f654" testId="88ff425b-4949-2ab8-cf4d-635d749886d0" testName="CreateMultiplePayPeriods" computerName="780847-PC" duration="00:00:01.0084103" startTime="2012-07-17T19:16:36.4548757+01:00" endTime="2012-07-17T19:16:37.4768861+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0191ed9b-d234-4978-980d-2442bc07f654">
+      <Output>
+        <StdOut>Given I have a new system with no pay periods
+-&gt; error: Unable to connect to server localhost:27017: No connection could be made because the target machine actively refused it 127.0.0.1:27017.
+And I launch Monty
+-&gt; skipped because of previous errors
+And I click Pay Periods
+-&gt; skipped because of previous errors
+When I click Create New
+-&gt; skipped because of previous errors
+And I create pay periods
+  --- table step argument ---
+  | Name     | StartDate | EndDate  |
+  | JuneTest | 1/1/2012  | 2/2/2012 |
+  | July     | 2/2/2012  | 4/4/2012 |
+-&gt; skipped because of previous errors
+Then I should see JuneTest in the existing pay periods
+-&gt; skipped because of previous errors
+And I should see July in the existing pay periods
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Test method Monty.Features.CreatingANewPayPeriodFeature.CreateMultiplePayPeriods threw exception: 
+MongoDB.Driver.MongoConnectionException: Unable to connect to server localhost:27017: No connection could be made because the target machine actively refused it 127.0.0.1:27017. ---&gt; System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:27017</Message>
+          <StackTrace>    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   at MongoDB.Driver.Internal.MongoConnection.Open() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\MongoConnection.cs:line 369
+   at MongoDB.Driver.Internal.MongoConnection.SendMessage(MongoRequestMessage message, SafeMode safeMode) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\MongoConnection.cs:line 488
+   at MongoDB.Driver.Internal.MongoConnection.RunCommand(String collectionName, QueryFlags queryFlags, CommandDocument command, Boolean throwOnError) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\MongoConnection.cs:line 390
+   at MongoDB.Driver.MongoServerInstance.VerifyState(MongoConnection connection) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServerInstance.cs:line 428
+   at MongoDB.Driver.MongoServerInstance.Connect(Boolean slaveOk) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServerInstance.cs:line 348
+   at MongoDB.Driver.Internal.DirectConnector.Connect(TimeSpan timeout) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\DirectConnector.cs:line 52
+ --- End of inner exception stack trace ---
+    at MongoDB.Driver.Internal.DirectConnector.Connect(TimeSpan timeout) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\DirectConnector.cs:line 66
+   at MongoDB.Driver.MongoServer.Connect(TimeSpan timeout, ConnectWaitFor waitFor) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 590
+   at MongoDB.Driver.MongoServer.Connect(ConnectWaitFor waitFor) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 558
+   at MongoDB.Driver.MongoServer.ChooseServerInstance(Boolean slaveOk) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 1296
+   at MongoDB.Driver.MongoServer.AcquireConnection(MongoDatabase database, Boolean slaveOk) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 1188
+   at MongoDB.Driver.MongoCursorEnumerator`1.AcquireConnection() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCursorEnumerator.cs:line 210
+   at MongoDB.Driver.MongoCursorEnumerator`1.GetFirst() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCursorEnumerator.cs:line 223
+   at MongoDB.Driver.MongoCursorEnumerator`1.MoveNext() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCursorEnumerator.cs:line 141
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at MongoDB.Driver.MongoCollection.FindOneAs[TDocument](IMongoQuery query) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCollection.cs:line 526
+   at MongoDB.Driver.MongoCollection`1.FindOne(IMongoQuery query) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCollection.cs:line 1671
+   at MongoDB.Driver.MongoDatabase.RunCommandAs(Type commandResultType, IMongoCommand command) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 965
+   at MongoDB.Driver.MongoDatabase.RunCommandAs[TCommandResult](IMongoCommand command) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 942
+   at MongoDB.Driver.MongoDatabase.RunCommand(IMongoCommand command) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 920
+   at MongoDB.Driver.MongoDatabase.DropCollection(String collectionName) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 381
+   at MongoDB.Driver.MongoCollection.Drop() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCollection.cs:line 213
+   at Monty.Repository.PayPeriodRepository.ClearAllPayPeriods() in D:\Projects\MontyGit\Monty\Monty.Repository\PayPeriodRepository.cs:line 24
+   at Monty.Features.StepDefs.CreatingNewPayPeriod.GivenIHaveANewSystemWithNoPayPeriods() in D:\Projects\MontyGit\Monty\Monty.Features\StepDefs\CreatingNewPayPeriod.cs:line 31
+   at lambda_method(Closure , IContextManager )
+   at TechTalk.SpecFlow.Bindings.MethodBinding.InvokeAction(IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Bindings.StepDefinitionBinding.Invoke(IContextManager contextManager, ITestTracer testTracer, Object[] arguments, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepArgs stepArgs)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Monty.Features.CreatingANewPayPeriodFeature.ScenarioCleanup() in D:\Projects\MontyGit\Monty\Monty.Features\CreatingANewPayPeriod.feature.cs:line 0
+   at Monty.Features.CreatingANewPayPeriodFeature.CreateMultiplePayPeriods() in d:\Projects\MontyGit\Monty\Monty.Features\CreatingANewPayPeriod.feature:line 24
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="69e3cddd-e86a-48de-8889-53673d54ca99" testId="3a44d5bb-dade-b517-7657-0e9d53d08ed5" testName="CreatingMultiplePayPeriods" computerName="780847-PC" duration="00:00:01.0000740" startTime="2012-07-17T19:16:37.4888868+01:00" endTime="2012-07-17T19:16:38.4868920+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="69e3cddd-e86a-48de-8889-53673d54ca99">
+      <Output>
+        <StdOut>Given I have a new system with pay periods
+  --- table step argument ---
+  | Name     | StartDate | EndDate  |
+  | JuneTest | 1/1/2012  | 2/2/2012 |
+  | JulyTest | 3/3/2012  | 4/4/2012 |
+-&gt; error: Unable to connect to server localhost:27017: No connection could be made because the target machine actively refused it 127.0.0.1:27017.
+When I retrieve all pay periods
+-&gt; skipped because of previous errors
+Then They should have details
+  --- table step argument ---
+  | Name     | StartDate | EndDate  |
+  | JuneTest | 1/1/2012  | 2/2/2012 |
+  | JulyTest | 3/3/2012  | 4/4/2012 |
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Test method Monty.Features.ConfiguringPayPeriodFeature.CreatingMultiplePayPeriods threw exception: 
+MongoDB.Driver.MongoConnectionException: Unable to connect to server localhost:27017: No connection could be made because the target machine actively refused it 127.0.0.1:27017. ---&gt; System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:27017</Message>
+          <StackTrace>    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   at MongoDB.Driver.Internal.MongoConnection.Open() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\MongoConnection.cs:line 369
+   at MongoDB.Driver.Internal.MongoConnection.SendMessage(MongoRequestMessage message, SafeMode safeMode) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\MongoConnection.cs:line 488
+   at MongoDB.Driver.Internal.MongoConnection.RunCommand(String collectionName, QueryFlags queryFlags, CommandDocument command, Boolean throwOnError) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\MongoConnection.cs:line 390
+   at MongoDB.Driver.MongoServerInstance.VerifyState(MongoConnection connection) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServerInstance.cs:line 428
+   at MongoDB.Driver.MongoServerInstance.Connect(Boolean slaveOk) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServerInstance.cs:line 348
+   at MongoDB.Driver.Internal.DirectConnector.Connect(TimeSpan timeout) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\DirectConnector.cs:line 52
+ --- End of inner exception stack trace ---
+    at MongoDB.Driver.Internal.DirectConnector.Connect(TimeSpan timeout) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\DirectConnector.cs:line 66
+   at MongoDB.Driver.MongoServer.Connect(TimeSpan timeout, ConnectWaitFor waitFor) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 590
+   at MongoDB.Driver.MongoServer.Connect(ConnectWaitFor waitFor) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 558
+   at MongoDB.Driver.MongoServer.ChooseServerInstance(Boolean slaveOk) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 1296
+   at MongoDB.Driver.MongoServer.AcquireConnection(MongoDatabase database, Boolean slaveOk) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 1188
+   at MongoDB.Driver.MongoCursorEnumerator`1.AcquireConnection() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCursorEnumerator.cs:line 210
+   at MongoDB.Driver.MongoCursorEnumerator`1.GetFirst() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCursorEnumerator.cs:line 223
+   at MongoDB.Driver.MongoCursorEnumerator`1.MoveNext() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCursorEnumerator.cs:line 141
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at MongoDB.Driver.MongoCollection.FindOneAs[TDocument](IMongoQuery query) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCollection.cs:line 526
+   at MongoDB.Driver.MongoCollection`1.FindOne(IMongoQuery query) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCollection.cs:line 1671
+   at MongoDB.Driver.MongoDatabase.RunCommandAs(Type commandResultType, IMongoCommand command) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 965
+   at MongoDB.Driver.MongoDatabase.RunCommandAs[TCommandResult](IMongoCommand command) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 942
+   at MongoDB.Driver.MongoDatabase.RunCommand(IMongoCommand command) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 920
+   at MongoDB.Driver.MongoDatabase.DropCollection(String collectionName) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 381
+   at MongoDB.Driver.MongoCollection.Drop() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCollection.cs:line 213
+   at Monty.Repository.PayPeriodRepository.ClearAllPayPeriods() in D:\Projects\MontyGit\Monty\Monty.Repository\PayPeriodRepository.cs:line 24
+   at Monty.Features.StepDefs.PayPeriodRepo.GivenIHaveANewSystemWithPayPeriods(Table table) in D:\Projects\MontyGit\Monty\Monty.Features\StepDefs\PayPeriodRepo.cs:line 21
+   at lambda_method(Closure , IContextManager , Table )
+   at TechTalk.SpecFlow.Bindings.MethodBinding.InvokeAction(IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Bindings.StepDefinitionBinding.Invoke(IContextManager contextManager, ITestTracer testTracer, Object[] arguments, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepArgs stepArgs)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Monty.Features.ConfiguringPayPeriodFeature.ScenarioCleanup() in D:\Projects\MontyGit\Monty\Monty.Features\PayPeriodRepoTests.feature.cs:line 0
+   at Monty.Features.ConfiguringPayPeriodFeature.CreatingMultiplePayPeriods() in d:\Projects\MontyGit\Monty\Monty.Features\PayPeriodRepoTests.feature:line 20
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c7028c92-8323-4ba7-b857-bea1db3abb81" testId="92f07e27-fe63-cae7-e994-4b1dcfce4dcc" testName="CreatingAPayPeriod" computerName="780847-PC" duration="00:00:01.0036642" startTime="2012-07-17T19:16:38.4968920+01:00" endTime="2012-07-17T19:16:39.5068934+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c7028c92-8323-4ba7-b857-bea1db3abb81">
+      <Output>
+        <StdOut>Given I have a new system with pay periods
+  --- table step argument ---
+  | Name     | StartDate | EndDate  |
+  | JuneTest | 1/1/2012  | 2/2/2012 |
+-&gt; error: Unable to connect to server localhost:27017: No connection could be made because the target machine actively refused it 127.0.0.1:27017.
+When I retrieve JuneTest from the database
+-&gt; skipped because of previous errors
+Then It should have details
+  --- table step argument ---
+  | Name     | StartDate | EndDate  |
+  | JuneTest | 1/1/2012  | 2/2/2012 |
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Test method Monty.Features.ConfiguringPayPeriodFeature.CreatingAPayPeriod threw exception: 
+MongoDB.Driver.MongoConnectionException: Unable to connect to server localhost:27017: No connection could be made because the target machine actively refused it 127.0.0.1:27017. ---&gt; System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:27017</Message>
+          <StackTrace>    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   at MongoDB.Driver.Internal.MongoConnection.Open() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\MongoConnection.cs:line 369
+   at MongoDB.Driver.Internal.MongoConnection.SendMessage(MongoRequestMessage message, SafeMode safeMode) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\MongoConnection.cs:line 488
+   at MongoDB.Driver.Internal.MongoConnection.RunCommand(String collectionName, QueryFlags queryFlags, CommandDocument command, Boolean throwOnError) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\MongoConnection.cs:line 390
+   at MongoDB.Driver.MongoServerInstance.VerifyState(MongoConnection connection) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServerInstance.cs:line 428
+   at MongoDB.Driver.MongoServerInstance.Connect(Boolean slaveOk) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServerInstance.cs:line 348
+   at MongoDB.Driver.Internal.DirectConnector.Connect(TimeSpan timeout) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\DirectConnector.cs:line 52
+ --- End of inner exception stack trace ---
+    at MongoDB.Driver.Internal.DirectConnector.Connect(TimeSpan timeout) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\DirectConnector.cs:line 66
+   at MongoDB.Driver.MongoServer.Connect(TimeSpan timeout, ConnectWaitFor waitFor) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 590
+   at MongoDB.Driver.MongoServer.Connect(ConnectWaitFor waitFor) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 558
+   at MongoDB.Driver.MongoServer.ChooseServerInstance(Boolean slaveOk) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 1296
+   at MongoDB.Driver.MongoServer.AcquireConnection(MongoDatabase database, Boolean slaveOk) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 1188
+   at MongoDB.Driver.MongoCursorEnumerator`1.AcquireConnection() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCursorEnumerator.cs:line 210
+   at MongoDB.Driver.MongoCursorEnumerator`1.GetFirst() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCursorEnumerator.cs:line 223
+   at MongoDB.Driver.MongoCursorEnumerator`1.MoveNext() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCursorEnumerator.cs:line 141
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at MongoDB.Driver.MongoCollection.FindOneAs[TDocument](IMongoQuery query) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCollection.cs:line 526
+   at MongoDB.Driver.MongoCollection`1.FindOne(IMongoQuery query) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCollection.cs:line 1671
+   at MongoDB.Driver.MongoDatabase.RunCommandAs(Type commandResultType, IMongoCommand command) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 965
+   at MongoDB.Driver.MongoDatabase.RunCommandAs[TCommandResult](IMongoCommand command) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 942
+   at MongoDB.Driver.MongoDatabase.RunCommand(IMongoCommand command) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 920
+   at MongoDB.Driver.MongoDatabase.DropCollection(String collectionName) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 381
+   at MongoDB.Driver.MongoCollection.Drop() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCollection.cs:line 213
+   at Monty.Repository.PayPeriodRepository.ClearAllPayPeriods() in D:\Projects\MontyGit\Monty\Monty.Repository\PayPeriodRepository.cs:line 24
+   at Monty.Features.StepDefs.PayPeriodRepo.GivenIHaveANewSystemWithPayPeriods(Table table) in D:\Projects\MontyGit\Monty\Monty.Features\StepDefs\PayPeriodRepo.cs:line 21
+   at lambda_method(Closure , IContextManager , Table )
+   at TechTalk.SpecFlow.Bindings.MethodBinding.InvokeAction(IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Bindings.StepDefinitionBinding.Invoke(IContextManager contextManager, ITestTracer testTracer, Object[] arguments, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepArgs stepArgs)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Monty.Features.ConfiguringPayPeriodFeature.ScenarioCleanup() in D:\Projects\MontyGit\Monty\Monty.Features\PayPeriodRepoTests.feature.cs:line 0
+   at Monty.Features.ConfiguringPayPeriodFeature.CreatingAPayPeriod() in d:\Projects\MontyGit\Monty\Monty.Features\PayPeriodRepoTests.feature:line 10
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d70ce6f9-4ba5-43f7-821d-bffd5b754268" testId="291bea98-195c-4df5-8790-2eba9cd813e5" testName="DeletingAPayPeriod" computerName="780847-PC" duration="00:00:01.0090647" startTime="2012-07-17T19:16:39.5168935+01:00" endTime="2012-07-17T19:16:40.5268949+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d70ce6f9-4ba5-43f7-821d-bffd5b754268">
+      <Output>
+        <StdOut>Given I have a new system with pay periods
+  --- table step argument ---
+  | Name     | StartDate | EndDate  |
+  | JuneTest | 1/1/2012  | 2/2/2012 |
+-&gt; error: Unable to connect to server localhost:27017: No connection could be made because the target machine actively refused it 127.0.0.1:27017.
+When I delete JuneTest
+-&gt; skipped because of previous errors
+Then The pay period database should be empty
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Test method Monty.Features.ConfiguringPayPeriodFeature.DeletingAPayPeriod threw exception: 
+MongoDB.Driver.MongoConnectionException: Unable to connect to server localhost:27017: No connection could be made because the target machine actively refused it 127.0.0.1:27017. ---&gt; System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:27017</Message>
+          <StackTrace>    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   at MongoDB.Driver.Internal.MongoConnection.Open() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\MongoConnection.cs:line 369
+   at MongoDB.Driver.Internal.MongoConnection.SendMessage(MongoRequestMessage message, SafeMode safeMode) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\MongoConnection.cs:line 488
+   at MongoDB.Driver.Internal.MongoConnection.RunCommand(String collectionName, QueryFlags queryFlags, CommandDocument command, Boolean throwOnError) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\MongoConnection.cs:line 390
+   at MongoDB.Driver.MongoServerInstance.VerifyState(MongoConnection connection) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServerInstance.cs:line 428
+   at MongoDB.Driver.MongoServerInstance.Connect(Boolean slaveOk) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServerInstance.cs:line 348
+   at MongoDB.Driver.Internal.DirectConnector.Connect(TimeSpan timeout) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\DirectConnector.cs:line 52
+ --- End of inner exception stack trace ---
+    at MongoDB.Driver.Internal.DirectConnector.Connect(TimeSpan timeout) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\DirectConnector.cs:line 66
+   at MongoDB.Driver.MongoServer.Connect(TimeSpan timeout, ConnectWaitFor waitFor) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 590
+   at MongoDB.Driver.MongoServer.Connect(ConnectWaitFor waitFor) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 558
+   at MongoDB.Driver.MongoServer.ChooseServerInstance(Boolean slaveOk) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 1296
+   at MongoDB.Driver.MongoServer.AcquireConnection(MongoDatabase database, Boolean slaveOk) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 1188
+   at MongoDB.Driver.MongoCursorEnumerator`1.AcquireConnection() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCursorEnumerator.cs:line 210
+   at MongoDB.Driver.MongoCursorEnumerator`1.GetFirst() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCursorEnumerator.cs:line 223
+   at MongoDB.Driver.MongoCursorEnumerator`1.MoveNext() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCursorEnumerator.cs:line 141
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at MongoDB.Driver.MongoCollection.FindOneAs[TDocument](IMongoQuery query) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCollection.cs:line 526
+   at MongoDB.Driver.MongoCollection`1.FindOne(IMongoQuery query) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCollection.cs:line 1671
+   at MongoDB.Driver.MongoDatabase.RunCommandAs(Type commandResultType, IMongoCommand command) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 965
+   at MongoDB.Driver.MongoDatabase.RunCommandAs[TCommandResult](IMongoCommand command) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 942
+   at MongoDB.Driver.MongoDatabase.RunCommand(IMongoCommand command) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 920
+   at MongoDB.Driver.MongoDatabase.DropCollection(String collectionName) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 381
+   at MongoDB.Driver.MongoCollection.Drop() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCollection.cs:line 213
+   at Monty.Repository.PayPeriodRepository.ClearAllPayPeriods() in D:\Projects\MontyGit\Monty\Monty.Repository\PayPeriodRepository.cs:line 24
+   at Monty.Features.StepDefs.PayPeriodRepo.GivenIHaveANewSystemWithPayPeriods(Table table) in D:\Projects\MontyGit\Monty\Monty.Features\StepDefs\PayPeriodRepo.cs:line 21
+   at lambda_method(Closure , IContextManager , Table )
+   at TechTalk.SpecFlow.Bindings.MethodBinding.InvokeAction(IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Bindings.StepDefinitionBinding.Invoke(IContextManager contextManager, ITestTracer testTracer, Object[] arguments, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepArgs stepArgs)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Monty.Features.ConfiguringPayPeriodFeature.ScenarioCleanup() in D:\Projects\MontyGit\Monty\Monty.Features\PayPeriodRepoTests.feature.cs:line 0
+   at Monty.Features.ConfiguringPayPeriodFeature.DeletingAPayPeriod() in d:\Projects\MontyGit\Monty\Monty.Features\PayPeriodRepoTests.feature:line 42
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="57910011-929d-414e-9c2f-5afbd78a6c48" testId="00a68e87-1e9e-fb0b-7df4-1c5c93ddd11c" testName="DeleteExistingPayPeriod" computerName="780847-PC" duration="00:00:01.0243734" startTime="2012-07-17T19:16:40.5368949+01:00" endTime="2012-07-17T19:16:41.5668963+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="57910011-929d-414e-9c2f-5afbd78a6c48">
+      <Output>
+        <StdOut>Given I have a new system with pay periods
+  --- table step argument ---
+  | Name     | StartDate | EndDate  |
+  | JuneTest | 1/1/2012  | 2/2/2012 |
+-&gt; error: Unable to connect to server localhost:27017: No connection could be made because the target machine actively refused it 127.0.0.1:27017.
+And I view existing pay periods
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"I view existing pay periods")]
+        public void GivenIViewExistingPayPeriods()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+When I click delete
+-&gt; skipped because of previous errors
+Then I should not see JuneTest in the existing pay periods
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Then(@"I should not see JuneTest in the existing pay periods")]
+        public void ThenIShouldNotSeeJuneTestInTheExistingPayPeriods()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }</StdOut>
+        <ErrorInfo>
+          <Message>Test method Monty.Features.EditingPayPeriodsFeature.DeleteExistingPayPeriod threw exception: 
+MongoDB.Driver.MongoConnectionException: Unable to connect to server localhost:27017: No connection could be made because the target machine actively refused it 127.0.0.1:27017. ---&gt; System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:27017</Message>
+          <StackTrace>    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   at MongoDB.Driver.Internal.MongoConnection.Open() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\MongoConnection.cs:line 369
+   at MongoDB.Driver.Internal.MongoConnection.SendMessage(MongoRequestMessage message, SafeMode safeMode) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\MongoConnection.cs:line 488
+   at MongoDB.Driver.Internal.MongoConnection.RunCommand(String collectionName, QueryFlags queryFlags, CommandDocument command, Boolean throwOnError) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\MongoConnection.cs:line 390
+   at MongoDB.Driver.MongoServerInstance.VerifyState(MongoConnection connection) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServerInstance.cs:line 428
+   at MongoDB.Driver.MongoServerInstance.Connect(Boolean slaveOk) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServerInstance.cs:line 348
+   at MongoDB.Driver.Internal.DirectConnector.Connect(TimeSpan timeout) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\DirectConnector.cs:line 52
+ --- End of inner exception stack trace ---
+    at MongoDB.Driver.Internal.DirectConnector.Connect(TimeSpan timeout) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\DirectConnector.cs:line 66
+   at MongoDB.Driver.MongoServer.Connect(TimeSpan timeout, ConnectWaitFor waitFor) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 590
+   at MongoDB.Driver.MongoServer.Connect(ConnectWaitFor waitFor) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 558
+   at MongoDB.Driver.MongoServer.ChooseServerInstance(Boolean slaveOk) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 1296
+   at MongoDB.Driver.MongoServer.AcquireConnection(MongoDatabase database, Boolean slaveOk) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 1188
+   at MongoDB.Driver.MongoCursorEnumerator`1.AcquireConnection() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCursorEnumerator.cs:line 210
+   at MongoDB.Driver.MongoCursorEnumerator`1.GetFirst() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCursorEnumerator.cs:line 223
+   at MongoDB.Driver.MongoCursorEnumerator`1.MoveNext() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCursorEnumerator.cs:line 141
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at MongoDB.Driver.MongoCollection.FindOneAs[TDocument](IMongoQuery query) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCollection.cs:line 526
+   at MongoDB.Driver.MongoCollection`1.FindOne(IMongoQuery query) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCollection.cs:line 1671
+   at MongoDB.Driver.MongoDatabase.RunCommandAs(Type commandResultType, IMongoCommand command) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 965
+   at MongoDB.Driver.MongoDatabase.RunCommandAs[TCommandResult](IMongoCommand command) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 942
+   at MongoDB.Driver.MongoDatabase.RunCommand(IMongoCommand command) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 920
+   at MongoDB.Driver.MongoDatabase.DropCollection(String collectionName) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 381
+   at MongoDB.Driver.MongoCollection.Drop() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCollection.cs:line 213
+   at Monty.Repository.PayPeriodRepository.ClearAllPayPeriods() in D:\Projects\MontyGit\Monty\Monty.Repository\PayPeriodRepository.cs:line 24
+   at Monty.Features.StepDefs.PayPeriodRepo.GivenIHaveANewSystemWithPayPeriods(Table table) in D:\Projects\MontyGit\Monty\Monty.Features\StepDefs\PayPeriodRepo.cs:line 21
+   at lambda_method(Closure , IContextManager , Table )
+   at TechTalk.SpecFlow.Bindings.MethodBinding.InvokeAction(IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Bindings.StepDefinitionBinding.Invoke(IContextManager contextManager, ITestTracer testTracer, Object[] arguments, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepArgs stepArgs)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Monty.Features.EditingPayPeriodsFeature.ScenarioCleanup() in D:\Projects\MontyGit\Monty\Monty.Features\EditingPayPeriods.feature.cs:line 0
+   at Monty.Features.EditingPayPeriodsFeature.DeleteExistingPayPeriod() in d:\Projects\MontyGit\Monty\Monty.Features\EditingPayPeriods.feature:line 18
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0366187d-adac-462e-8c06-5c51b15c8d01" testId="3035dfcc-ffed-344e-6de8-49b3c87e7293" testName="EditingAPayPeriod" computerName="780847-PC" duration="00:00:01.0035609" startTime="2012-07-17T19:16:41.5668963+01:00" endTime="2012-07-17T19:16:42.5768977+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0366187d-adac-462e-8c06-5c51b15c8d01">
+      <Output>
+        <StdOut>Given I have a new system with pay periods
+  --- table step argument ---
+  | Name     | StartDate | EndDate  |
+  | JuneTest | 1/1/2012  | 2/2/2012 |
+-&gt; error: Unable to connect to server localhost:27017: No connection could be made because the target machine actively refused it 127.0.0.1:27017.
+When I edit and save JuneTest with details
+  --- table step argument ---
+  | Name           | StartDate | EndDate  |
+  | JuneTestChange | 1/2/2012  | 2/3/2012 |
+-&gt; skipped because of previous errors
+And I retrieve JuneTestChange from the database
+-&gt; skipped because of previous errors
+Then It should have details
+  --- table step argument ---
+  | Name           | StartDate | EndDate  |
+  | JuneTestChange | 1/2/2012  | 2/3/2012 |
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Test method Monty.Features.ConfiguringPayPeriodFeature.EditingAPayPeriod threw exception: 
+MongoDB.Driver.MongoConnectionException: Unable to connect to server localhost:27017: No connection could be made because the target machine actively refused it 127.0.0.1:27017. ---&gt; System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:27017</Message>
+          <StackTrace>    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   at MongoDB.Driver.Internal.MongoConnection.Open() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\MongoConnection.cs:line 369
+   at MongoDB.Driver.Internal.MongoConnection.SendMessage(MongoRequestMessage message, SafeMode safeMode) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\MongoConnection.cs:line 488
+   at MongoDB.Driver.Internal.MongoConnection.RunCommand(String collectionName, QueryFlags queryFlags, CommandDocument command, Boolean throwOnError) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\MongoConnection.cs:line 390
+   at MongoDB.Driver.MongoServerInstance.VerifyState(MongoConnection connection) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServerInstance.cs:line 428
+   at MongoDB.Driver.MongoServerInstance.Connect(Boolean slaveOk) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServerInstance.cs:line 348
+   at MongoDB.Driver.Internal.DirectConnector.Connect(TimeSpan timeout) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\DirectConnector.cs:line 52
+ --- End of inner exception stack trace ---
+    at MongoDB.Driver.Internal.DirectConnector.Connect(TimeSpan timeout) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Internal\DirectConnector.cs:line 66
+   at MongoDB.Driver.MongoServer.Connect(TimeSpan timeout, ConnectWaitFor waitFor) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 590
+   at MongoDB.Driver.MongoServer.Connect(ConnectWaitFor waitFor) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 558
+   at MongoDB.Driver.MongoServer.ChooseServerInstance(Boolean slaveOk) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 1296
+   at MongoDB.Driver.MongoServer.AcquireConnection(MongoDatabase database, Boolean slaveOk) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoServer.cs:line 1188
+   at MongoDB.Driver.MongoCursorEnumerator`1.AcquireConnection() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCursorEnumerator.cs:line 210
+   at MongoDB.Driver.MongoCursorEnumerator`1.GetFirst() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCursorEnumerator.cs:line 223
+   at MongoDB.Driver.MongoCursorEnumerator`1.MoveNext() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCursorEnumerator.cs:line 141
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at MongoDB.Driver.MongoCollection.FindOneAs[TDocument](IMongoQuery query) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCollection.cs:line 526
+   at MongoDB.Driver.MongoCollection`1.FindOne(IMongoQuery query) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCollection.cs:line 1671
+   at MongoDB.Driver.MongoDatabase.RunCommandAs(Type commandResultType, IMongoCommand command) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 965
+   at MongoDB.Driver.MongoDatabase.RunCommandAs[TCommandResult](IMongoCommand command) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 942
+   at MongoDB.Driver.MongoDatabase.RunCommand(IMongoCommand command) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 920
+   at MongoDB.Driver.MongoDatabase.DropCollection(String collectionName) in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoDatabase.cs:line 381
+   at MongoDB.Driver.MongoCollection.Drop() in C:\work\10gen\mongodb\mongo-csharp-driver\Driver\Core\MongoCollection.cs:line 213
+   at Monty.Repository.PayPeriodRepository.ClearAllPayPeriods() in D:\Projects\MontyGit\Monty\Monty.Repository\PayPeriodRepository.cs:line 24
+   at Monty.Features.StepDefs.PayPeriodRepo.GivenIHaveANewSystemWithPayPeriods(Table table) in D:\Projects\MontyGit\Monty\Monty.Features\StepDefs\PayPeriodRepo.cs:line 21
+   at lambda_method(Closure , IContextManager , Table )
+   at TechTalk.SpecFlow.Bindings.MethodBinding.InvokeAction(IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Bindings.StepDefinitionBinding.Invoke(IContextManager contextManager, ITestTracer testTracer, Object[] arguments, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepArgs stepArgs)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Monty.Features.ConfiguringPayPeriodFeature.ScenarioCleanup() in D:\Projects\MontyGit\Monty\Monty.Features\PayPeriodRepoTests.feature.cs:line 0
+   at Monty.Features.ConfiguringPayPeriodFeature.EditingAPayPeriod() in d:\Projects\MontyGit\Monty\Monty.Features\PayPeriodRepoTests.feature:line 33
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

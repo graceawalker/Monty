@@ -57,12 +57,20 @@ namespace Monty.Features.StepDefs
         }
 
         [Then(@"I should see (.*) in the existing pay periods")]
-        public void ThenIShouldSeeJuneTestInTheExistingPayPeriods(string payPeriod)
+        public void ThenIShouldSeeInTheExistingPayPeriods(string payPeriod)
         {
             Navigate("PayPeriod/Existing");
             _browser.HasContent(payPeriod).ShouldBe(true);
         }
 
+        [Then(@"I should not see (.*) in the existing pay periods")]
+        public void ThenIShouldNotSeeInTheExistingPayPeriods(string payPeriod)
+        {
+            Navigate("PayPeriod/Existing");
+            _browser.HasContent(payPeriod).ShouldBe(false);
+        }
+
+        [Given(@"I view existing pay periods")]
         [When(@"I view existing pay periods")]
         public void WhenIViewExistingPayPeriods()
         {

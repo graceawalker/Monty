@@ -55,5 +55,11 @@ namespace Monty.UI.Controllers
             var existing = _payPeriodRepository.GetAllPayPeriods();
             return View((new PayPeriodModel { ExistingPayPeriods = existing }));
         }
+
+        public ActionResult Delete(string payPeriodId)
+        {
+            _payPeriodRepository.DeleteById(payPeriodId);
+            return RedirectToAction("Existing");
+        }
     }
 }

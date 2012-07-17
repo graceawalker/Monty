@@ -90,4 +90,29 @@ namespace Monty.Tests.Controller
             _payPeriodRepo.Verify(p => p.Update(It.IsAny<PayPeriod>()));
         }
     }
+
+    [TestFixture]
+    public class When_existing_payperiod_is_deleted : TestSetup
+    {
+        Mock<IPayPeriodRepository> _payPeriodRepo;
+        PayPeriodController _controllerUnderTest;
+
+        protected override void Given()
+        {
+            new PayPeriodRepository().ClearAllPayPeriods();
+            _payPeriodRepo = new Mock<IPayPeriodRepository>();
+            _controllerUnderTest = new PayPeriodController(_payPeriodRepo.Object);
+        }
+
+        protected override void When()
+        {
+            _controllerUnderTest.Delete(It.IsAny<string>());
+        }
+
+        [Test]
+        public void Then()
+        {
+            _payPeriodRepo.Verify(p => p.DeleteById(It.IsAny<string>()));
+        }
+    }
 }

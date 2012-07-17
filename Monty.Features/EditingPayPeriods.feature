@@ -13,6 +13,7 @@ Scenario: Delete existing pay period
 Given I have a new system with pay periods
 | Name     | StartDate | EndDate  |
 | JuneTest | 1/1/2012  | 2/2/2012 |
+| JulyTest | 1/1/2012  | 2/2/2012 |
 And I view existing pay periods
 When I click Delete
 Then I should not see JuneTest in the existing pay periods 

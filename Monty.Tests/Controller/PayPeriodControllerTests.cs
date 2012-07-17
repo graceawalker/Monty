@@ -28,7 +28,7 @@ namespace Monty.Tests.Controller
 
         protected override void When()
         {
-            _controllerUnderTest.Save(new PayPeriodModel { PayPeriod = _payPeriodToSave });
+            _controllerUnderTest.Save(new PayPeriodViewModel { PayPeriod = _payPeriodToSave });
         }
 
         [Test]

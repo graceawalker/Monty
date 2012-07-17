@@ -49,9 +49,9 @@ namespace Monty.Features.StepDefs
         {
             foreach (var row in table.Rows)
             {
-                _browser.FillIn("PayPeriod.PayPeriodName").With(row["Name"]);
-                _browser.FillIn("PayPeriod.StartDate").With(row["StartDate"]);
-                _browser.FillIn("PayPeriod.EndDate").With(row["EndDate"]);
+                _browser.FillIn("PayPeriodModel.PayPeriodName").With(row["Name"]);
+                _browser.FillIn("PayPeriodModel.StartDate").With(row["StartDate"]);
+                _browser.FillIn("PayPeriodModel.EndDate").With(row["EndDate"]);
                 _browser.ClickButton("Create");
             }
         }

@@ -1,15 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using Monty.DAL;
+using System.Text;
+using System.ComponentModel;
 
 namespace Monty.UI.Models.PayPeriodModels
 {
     public class PayPeriodModel
     {
-        public PayPeriod PayPeriod { get; set; }
-
-        public IEnumerable<PayPeriod> ExistingPayPeriods { get; set; }
+        [DisplayName("Name")]
+        public string PayPeriodName { get; set; }
+        [DisplayName("Start Date")]
+        public DateTimeOffset StartDate { get; set; }
+        [DisplayName("End Date")]
+        public DateTimeOffset EndDate { get; set; }
     }
 }

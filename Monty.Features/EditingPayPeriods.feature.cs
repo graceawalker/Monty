@@ -114,13 +114,17 @@ this.ScenarioSetup(scenarioInfo);
                         "JuneTest",
                         "1/1/2012",
                         "2/2/2012"});
+            table2.AddRow(new string[] {
+                        "JulyTest",
+                        "1/1/2012",
+                        "2/2/2012"});
 #line 13
 testRunner.Given("I have a new system with pay periods", ((string)(null)), table2);
-#line 16
-testRunner.And("I view existing pay periods");
 #line 17
-testRunner.When("I click Delete");
+testRunner.And("I view existing pay periods");
 #line 18
+testRunner.When("I click Delete");
+#line 19
 testRunner.Then("I should not see JuneTest in the existing pay periods");
 #line hidden
             this.ScenarioCleanup();

@@ -81,9 +81,11 @@
     </Compile>
     <Compile Include="IOC.cs" />
     <Compile Include="Models\PayPeriodModels\PayPeriodModel.cs" />
+    <Compile Include="Models\PayPeriodModels\PayPeriodViewModel.cs" />
     <Compile Include="Plumbing\ControllersInstaller.cs" />
     <Compile Include="Plumbing\WindsorControllerFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TempatesVisibilityAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />

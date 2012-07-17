@@ -6,6 +6,7 @@ using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.IdGenerators;
 
+
 namespace Monty.DAL
 {
     public class PayPeriod
@@ -24,12 +25,16 @@ namespace Monty.DAL
             EndDate = parsed;
 
         }
+
+
+        [BsonElement]
+        public string PayPeriodName { get; set; }
+        public DateTimeOffset StartDate { get; set; }
         public DateTimeOffset EndDate { get; set; }
         [BsonId(IdGenerator = typeof(StringObjectIdGenerator))]
         public string Id { get; set; }
-        [BsonElement]
-        public string PayPeriodName { get; set; }
+
    
-        public DateTimeOffset StartDate { get; set; }
+
     }
 }

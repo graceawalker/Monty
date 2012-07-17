@@ -1,14 +1,9 @@
-﻿@model Monty.UI.Models.PayPeriodModels.PayPeriodModel
+﻿@model Monty.UI.Models.PayPeriodModels.PayPeriodViewModel
 
 @using (Html.BeginForm("Save", "PayPeriod"))
 {
     <fieldset>
-        <label>
-        Name</label>@Html.TextBoxFor(p => p.PayPeriod.PayPeriodName)
-    <label>
-        Start Date</label>@Html.TextBoxFor(p => p.PayPeriod.StartDate)
-    <label>
-        End Date</label>@Html.TextBoxFor(p => p.PayPeriod.EndDate)
+        @Html.EditorFor(m=>m.PayPeriodModel)
         <p>
             <input type="submit" value="Create" />
         </p>

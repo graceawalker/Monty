@@ -22,11 +22,11 @@ namespace Monty.UI.Controllers
 
         public ActionResult New()
         {
-            return View(new PayPeriodModel { PayPeriod = new PayPeriod() });
+            return View(new PayPeriodViewModel { PayPeriod = new PayPeriod() });
         }
 
         [HttpPost]
-        public ActionResult Save(PayPeriodModel model)
+        public ActionResult Save(PayPeriodViewModel model)
         {
             _payPeriodRepository.AddNew(model.PayPeriod);
             return RedirectToAction("New", "PayPeriod");
@@ -53,7 +53,7 @@ namespace Monty.UI.Controllers
         public ActionResult Existing()
         {
             var existing = _payPeriodRepository.GetAllPayPeriods();
-            return View((new PayPeriodModel { ExistingPayPeriods = existing }));
+            return View((new PayPeriodViewModel { ExistingPayPeriods = existing }));
         }
 
         public ActionResult Delete(string payPeriodId)

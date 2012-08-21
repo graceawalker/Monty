@@ -1,0 +1,28 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Monty.UI.Models.AccountCreditModel
+<fieldset>
+    <table>
+        <tr>
+            <td>
+                Name
+            </td>
+            <td>
+                Start
+            </td>
+        </tr>
+        @foreach (var pp in Model.AccountCredits)
+        {
+
+            <tr>
+                <td>
+                    <div contenteditable class="editPayPeriod" data-type="name" data-id="@pp.Id">@pp.Name</div>
+                </td>
+                <td>
+                    <div contenteditable class="editPayPeriod" data-type="startDate" data-id="@pp.Id">@pp.Date</div>
+                </td>
+            </tr>
+        }
+    </table>
+</fieldset>

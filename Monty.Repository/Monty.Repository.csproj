@@ -46,8 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IPayPeriodRepository.cs" />
-    <Compile Include="PayPeriodRepository.cs" />
+    <Compile Include="IAccountCreditRepository.cs" />
+    <Compile Include="AccountCreditRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegisterClasses.cs" />
   </ItemGroup>

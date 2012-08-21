@@ -7,7 +7,7 @@ namespace Monty.Repository
     {
         public static void RegisterClassMaps()
         {
-            BsonClassMap.RegisterClassMap<PayPeriod>(cm =>
+            BsonClassMap.RegisterClassMap<AccountCredit>(cm =>
             {
                 cm.AutoMap();
             });

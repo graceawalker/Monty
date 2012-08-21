@@ -80,34 +80,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="CreatingANewPayPeriod.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CreatingANewPayPeriod.feature</DependentUpon>
-    </Compile>
-    <Compile Include="StepDefs\PayPeriodRepo.cs" />
-    <Compile Include="PayPeriodRepoTests.feature.cs">
-      <DependentUpon>PayPeriodRepoTests.feature</DependentUpon>
-      <SubType>Code</SubType>
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StepDefs\CreatingNewPayPeriod.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="PayPeriodRepoTests.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>PayPeriodRepoTests.feature.cs</LastGenOutput>
-    </None>
     <None Include="EditingPayPeriods.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>EditingPayPeriods.feature.cs</LastGenOutput>
-    </None>
-    <None Include="CreatingANewPayPeriod.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>CreatingANewPayPeriod.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
@@ -127,6 +106,9 @@
       <Project>{3BC1751E-B27D-4AB9-86BB-CD283319AE14}</Project>
       <Name>Monty</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="StepDefs\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

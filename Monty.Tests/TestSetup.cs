@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Monty.DAL;
+using Monty.Repository;
 using NUnit.Framework;
 
 namespace Monty.Tests

@@ -15,13 +15,5 @@ namespace Monty.UI.Controllers
         {
             return View();
         }
-
-        [HttpPost]
-        public ActionResult Navigate(string navigate)
-        {
-            if (navigate == "Pay Periods")
-                return RedirectToAction("Index","PayPeriod");
-            return Index();
-        }
     }
 }

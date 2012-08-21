@@ -16,8 +16,8 @@ namespace Monty
             var container = new WindsorContainer()
     .Install(FromAssembly.This());
             container.Register(
-                Component.For<IAccountCreditRepository>()
-                    .ImplementedBy<AccountCreditRepository>());
+                Component.For<ICreditRepository>()
+                    .ImplementedBy<CreditRepository>());
 
             return container;
         }

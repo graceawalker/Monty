@@ -11,59 +11,65 @@ using Monty.Repository;
 namespace Monty.Tests.Controller
 {
     [TestFixture]
-    public class AccountCreditControllerTest: TestSetup
+    public class CreditControllerTest: TestSetup
     {
-        private AccountCreditController _accountCreditController;
+        private CreditController _creditController;
         private ViewResult _viewResult;
-        private Mock<AccountCreditRepository> _repo;
+        private Mock<CreditRepository> _repo;
 
         protected override void Given()
         {
-            _repo = new Mock<AccountCreditRepository>();
-            _repo.Setup(r=>r.GetAllAccountCredits()).Returns(new List<AccountCredit>{new AccountCredit("Test","12/12/2012")});
-            _accountCreditController = new AccountCreditController(_repo.Object);
+            _repo = new Mock<CreditRepository>();
+            _repo.Setup(r=>r.GetAllCredits()).Returns(new List<Credit>{new Credit("Test","12/12/2012")});
+            _creditController = new CreditController(_repo.Object);
         }
 
         protected override void When()
         {
-           _viewResult = _accountCreditController.Index() as ViewResult;
+           _viewResult = _creditController.Index() as ViewResult;
         }
 
         [Test]
         public void Should_Navigate_To_Credit_Page()
         {
-            (_viewResult.Model as IEnumerable<AccountCredit>).Count().ShouldBe(1);
+            (_viewResult.Model as IEnumerable<Credit>).Count().ShouldBe(1);
         }
 
         [Test]
         public void Should_call_repo()
         {
-            _repo.Verify(r=>r.GetAllAccountCredits());
+            _repo.Verify(r=>r.GetAllCredits());
         }
     }
 
-    public class AccountDebitControllerTest : TestSetup
+    public class DebitControllerTest : TestSetup
     {
-        private AccountDebitController _accountDebitController;
+        private DebitController _debitController;
         private ViewResult _viewResult;
-        private Mock<AccountDebitRepository> _repo;
+        private Mock<DebitRepository> _repo;
 
         protected override void Given()
         {
-            _repo = new Mock<AccountDebitRepository>();
-            _repo.Setup(r => r.GetAllAccountDebits()).Returns(new List<AccountDebit> { new AccountDebit("Test", "12/12/2012") });
-            _accountDebitController = new AccountDebitController(_repo.Object);
+            _repo = new Mock<DebitRepository>();
+            _repo.Setup(r => r.GetAllDebits()).Returns(new List<Debit> { new Debit("Test", "12/12/2012") });
+            _debitController = new DebitController(_repo.Object);
         }
 
         protected override void When()
         {
-            _viewResult = _accountDebitController.Index() as ViewResult;
+            _viewResult = _debitController.Index() as ViewResult;
         }
 
         [Test]
         public void Should_navigate_to_debit_page()
         {
-            (_viewResult.Model as IEnumerable<AccountDebit>).Count().ShouldBe(1);
+            (_viewResult.Model as IEnumerable<Debit>).Count().ShouldBe(1);
+        }
+
+        [Test]
+        public void Should_call_repo()
+        {
+            _repo.Verify(r => r.GetAllDebits());
         }
     }
 }

@@ -59,11 +59,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\ControllerTest.cs" />
-    <Compile Include="AccountDebitRepositoryTests.cs" />
+    <Compile Include="DebitRepositoryTests.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="TestSetup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AccountCreditRepositoryTests.cs" />
+    <Compile Include="CreditRepositoryTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

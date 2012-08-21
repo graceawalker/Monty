@@ -9,14 +9,14 @@ using MongoDB.Bson.Serialization.IdGenerators;
 
 namespace Monty.Model.DAL
 {
-    public class AccountCredit
+    public class AccountDebit
     {
-        public AccountCredit()
+        public AccountDebit()
         {
 
         }
 
-        public AccountCredit(string name, string date)
+        public AccountDebit(string name, string date)
         {
             Name = name;
             DateTime parsed;

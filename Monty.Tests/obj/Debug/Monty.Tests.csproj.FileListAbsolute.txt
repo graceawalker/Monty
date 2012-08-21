@@ -144,7 +144,6 @@ D:\Monty\Monty\Monty.Tests\bin\Debug\Monty.UI.dll
 D:\Monty\Monty\Monty.Tests\bin\Debug\Moq.dll
 D:\Monty\Monty\Monty.Tests\bin\Debug\nunit.framework.dll
 D:\Monty\Monty\Monty.Tests\bin\Debug\Shouldly.dll
-D:\Monty\Monty\Monty.Tests\bin\Debug\MongoDB.Driver.dll
 D:\Monty\Monty\Monty.Tests\bin\Debug\Monty.Model.pdb
 D:\Monty\Monty\Monty.Tests\bin\Debug\Monty.Repository.pdb
 D:\Monty\Monty\Monty.Tests\bin\Debug\Monty.UI.pdb

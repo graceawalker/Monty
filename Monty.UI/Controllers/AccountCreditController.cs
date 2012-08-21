@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Web.Mvc;
-using Monty.DAL;
-using Monty.UI.Models;
+﻿using System.Web.Mvc;
 using Monty.Repository;
 
 namespace Monty.UI.Controllers
@@ -18,9 +15,7 @@ namespace Monty.UI.Controllers
         public ActionResult Index()
         {
             var accountCredits = _accountCreditRepo.GetAllAccountCredits();
-            var model = new AccountCreditModel();
-            model.AccountCredits = new List<AccountCredit>(accountCredits);
-            return View(model);
+            return View(accountCredits);
         }
     }
 }

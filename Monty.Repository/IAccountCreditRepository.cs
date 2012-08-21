@@ -1,6 +1,6 @@
 ﻿using System;
 using MongoDB.Bson;
-using Monty.DAL;
+using Monty.Model.DAL;
 using System.Collections.Generic;
 namespace Monty.Repository
 {

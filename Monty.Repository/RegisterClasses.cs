@@ -1,5 +1,5 @@
 ﻿using MongoDB.Bson.Serialization;
-using Monty.DAL;
+using Monty.Model.DAL;
 
 namespace Monty.Repository
 {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MongoDB.Driver;
 using MongoDB.Bson;
-using Monty.DAL;
+using Monty.Model.DAL;
 
 namespace Monty.Repository
 {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Monty.DAL;
+using Monty.Model.DAL;
 using Monty.Repository;
 using NUnit.Framework;
 
@@ -16,6 +16,7 @@ namespace Monty.Tests
         [SetUp]
         public void BeforeEachTest()
         {
+            Database.Clear();
             IOC.RegisterComponents();
             Given();
             When();

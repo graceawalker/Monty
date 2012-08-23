@@ -72,4 +72,35 @@ namespace Monty.Tests.Controller
             _repo.Verify(r => r.GetAll());
         }
     }
+
+    public class AccountControllerTest : TestSetup
+    {
+        private AccountController _accountController;
+        private ViewResult _viewResult;
+        private Mock<IRepository<Account>> _repo;
+
+        protected override void Given()
+        {
+            _repo = new Mock<IRepository<Account>>();
+            _repo.Setup(r => r.GetAll()).Returns(new List<Account> { new Account("Test") });
+            _accountController = new AccountController(_repo.Object);
+        }
+
+        protected override void When()
+        {
+            _viewResult = _accountController.Index() as ViewResult;
+        }
+
+        [Test]
+        public void Should_navigate_to_debit_page()
+        {
+            (_viewResult.Model as IEnumerable<Account>).Count().ShouldBe(1);
+        }
+
+        [Test]
+        public void Should_call_repo()
+        {
+            _repo.Verify(r => r.GetAll());
+        }
+    }
 }

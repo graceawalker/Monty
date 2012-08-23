@@ -1,20 +1,21 @@
 ﻿using System.Web.Mvc;
+using Monty.Model.DAL;
 using Monty.Repository;
 
 namespace Monty.UI.Controllers
 {
     public class CreditController : Controller
     {
-        private readonly ICreditRepository _creditRepo;
+        private readonly IRepository<Credit> _repo;
 
-        public CreditController(ICreditRepository creditRepo)
+        public CreditController(IRepository<Credit> repo)
         {
-            _creditRepo = creditRepo;
+            _repo = repo;
         }
 
         public ActionResult Index()
         {
-            var credits = _creditRepo.GetAllCredits();
+            var credits = _repo.GetAll();
             return View(credits);
         }
     }

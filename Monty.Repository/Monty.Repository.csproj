@@ -46,10 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountRepository.cs" />
     <Compile Include="DebitRepository.cs" />
-    <Compile Include="ICreditRepository.cs" />
+    <Compile Include="IRepository.cs" />
     <Compile Include="CreditRepository.cs" />
-    <Compile Include="IDebitRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegisterClasses.cs" />
   </ItemGroup>

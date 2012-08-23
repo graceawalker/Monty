@@ -1,17 +1,28 @@
-﻿
-@{
-    Layout = null;
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
+<fieldset>
+    <table>
+        <tr>
+            <td>
+                Name
+            </td>
+            <td>
+                Start
+            </td>
+        </tr>
+        @foreach (var pp in Model)
+        {
 
-<html>
-    <head>
-        <title>title</title>
-    </head>
-    <body>
-        <div>
-              
-        </div>
-    </body>
-</html>
+            <tr>
+                <td>
+                    <div data-type="name" data-id="@pp.Id">@pp.Name</div>
+                </td>
+                <td>
+                    <div data-type="startDate" data-id="@pp.Id">@pp.Date</div>
+                </td>
+            </tr>
+        }
+    </table>
+</fieldset>

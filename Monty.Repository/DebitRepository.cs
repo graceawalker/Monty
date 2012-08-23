@@ -5,7 +5,7 @@ using Monty.Model.DAL;
 
 namespace Monty.Repository
 {
-    public class DebitRepository : IDebitRepository
+    public class DebitRepository : IRepository<Debit>
     {
         private MongoCollection<BsonDocument> _debits;
         private MongoDatabase _montyTestDb;
@@ -19,26 +19,31 @@ namespace Monty.Repository
         }
 
 
-        public void ClearAllDebits()
-        {
-            _montyTestDb.GetCollection("debit").Drop();
-        }
-
         public virtual void AddNew(Debit credit)
         {
             _debits.Insert(credit);
         }
 
-        public Debit GetDebitByName(string debitName)
+        public void ClearAll()
         {
-            var query = new QueryDocument("Name", debitName);
-            return _debits.FindOneAs<Debit>(query);
-
+            _montyTestDb.GetCollection("debit").Drop();
         }
 
-        public virtual IEnumerable<Debit> GetAllDebits()
+        public void DeleteBy(string name)
+        {
+            var query = new QueryDocument("Name", name);
+            _debits.Remove(query);
+        }
+
+        public virtual IEnumerable<Debit> GetAll()
         {
             return _debits.FindAllAs<Debit>();
+        }
+
+        public Debit GetByName(string name)
+        {
+            var query = new QueryDocument("Name", name);
+            return _debits.FindOneAs<Debit>(query);
         }
 
         public void Update(Debit credit)
@@ -46,18 +51,11 @@ namespace Monty.Repository
             _debits.Save(credit);
         }
 
-        public Debit GetDebitById(string id)
+        public Debit GetById(string id)
         {
             var query = new QueryDocument("_id", id);
             return _debits.FindOneAs<Debit>(query);
         }
-
-        public void Delete(string name)
-        {
-            var query = new QueryDocument("Name", name);
-            _debits.Remove(query);
-        }
-
 
         public void DeleteById(string id)
         {

@@ -32,8 +32,6 @@ namespace Monty.UI
                 "{controller}/{action}/{id}", // URL with parameters
                 new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
             );
-
-
         }
 
         private static IWindsorContainer container;
@@ -48,11 +46,12 @@ namespace Monty.UI
 
         protected void Application_Start()
         {
+            BootstrapContainer();
             AreaRegistration.RegisterAllAreas();
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
-            BootstrapContainer();
+
         }
 
 

@@ -5,7 +5,7 @@ using Monty.Model.DAL;
 
 namespace Monty.Repository
 {
-    public class CreditRepository : Monty.Repository.ICreditRepository
+    public class CreditRepository : IRepository<Credit>
     {
         private MongoCollection<BsonDocument> _credits;
         private MongoDatabase _montyTestDb;
@@ -19,24 +19,23 @@ namespace Monty.Repository
         }
 
 
-        public void ClearAllCredits()
+        public void AddNew(Credit entity)
+        {
+            _credits.Insert(entity);
+        }
+
+        public void ClearAll()
         {
             _montyTestDb.GetCollection("credit").Drop();
         }
 
-        public virtual void AddNew(Credit credit)
+        public Credit GetByName(string name)
         {
-            _credits.Insert(credit);
-        }
-
-        public Credit GetCreditByName(string creditName)
-        {
-            var query = new QueryDocument("Name", creditName);
+            var query = new QueryDocument("Name", name);
             return _credits.FindOneAs<Credit>(query);
-
         }
 
-        public virtual IEnumerable<Credit> GetAllCredits()
+        public virtual IEnumerable<Credit> GetAll()
         {
             return _credits.FindAllAs<Credit>();
         }
@@ -46,13 +45,13 @@ namespace Monty.Repository
             _credits.Save(credit);
         }
 
-        public Credit GetCreditById(string id)
+        public Credit GetById(string id)
         {
             var query = new QueryDocument("_id", id);
             return _credits.FindOneAs<Credit>(query);
         }
 
-        public void Delete(string name)
+        public void DeleteBy(string name)
         {
             var query = new QueryDocument("Name", name);
             _credits.Remove(query);

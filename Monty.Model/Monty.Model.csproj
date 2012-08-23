@@ -46,8 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAL\AccountCredit.cs" />
-    <Compile Include="DAL\AccountDebit.cs" />
+    <Compile Include="DAL\Account.cs" />
+    <Compile Include="DAL\Credit.cs" />
+    <Compile Include="DAL\Debit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

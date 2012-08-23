@@ -31,11 +31,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Castle.Core, Version=3.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
-      <HintPath>..\packages\Castle.Core.3.0.0.4001\lib\net40-client\Castle.Core.dll</HintPath>
+    <Reference Include="Castle.Core, Version=3.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Castle.Core.3.1.0\lib\net40-client\Castle.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Castle.Windsor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
-      <HintPath>..\packages\Castle.Windsor.3.0.0.4001\lib\net40\Castle.Windsor.dll</HintPath>
+    <Reference Include="Castle.Windsor, Version=3.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Castle.Windsor.3.1.0\lib\net40\Castle.Windsor.dll</HintPath>
     </Reference>
     <Reference Include="MongoDB.Bson, Version=1.4.2.4500, Culture=neutral, PublicKeyToken=f686731cfb9cc103, processorArchitecture=MSIL" />
     <Reference Include="MongoDB.Driver, Version=1.4.2.4500, Culture=neutral, PublicKeyToken=f686731cfb9cc103, processorArchitecture=MSIL" />
@@ -59,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\ControllerTest.cs" />
+    <Compile Include="AccountRepositoryTests.cs" />
     <Compile Include="DebitRepositoryTests.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="TestSetup.cs" />
@@ -80,6 +83,10 @@
     <ProjectReference Include="..\Monty.UI\Monty.UI.csproj">
       <Project>{8DE8BC45-4D56-4475-87D5-07D00153D0B6}</Project>
       <Name>Monty.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Monty\Monty.csproj">
+      <Project>{3BC1751E-B27D-4AB9-86BB-CD283319AE14}</Project>
+      <Name>Monty</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

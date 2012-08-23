@@ -15,12 +15,12 @@ namespace Monty.Tests.Controller
     {
         private CreditController _creditController;
         private ViewResult _viewResult;
-        private Mock<CreditRepository> _repo;
+        private Mock<IRepository<Credit>> _repo;
 
         protected override void Given()
         {
-            _repo = new Mock<CreditRepository>();
-            _repo.Setup(r=>r.GetAllCredits()).Returns(new List<Credit>{new Credit("Test","12/12/2012")});
+            _repo = new Mock<IRepository<Credit>>();
+            _repo.Setup(r=>r.GetAll()).Returns(new List<Credit>{new Credit("Test","12/12/2012")});
             _creditController = new CreditController(_repo.Object);
         }
 
@@ -38,7 +38,7 @@ namespace Monty.Tests.Controller
         [Test]
         public void Should_call_repo()
         {
-            _repo.Verify(r=>r.GetAllCredits());
+            _repo.Verify(r=>r.GetAll());
         }
     }
 
@@ -46,12 +46,12 @@ namespace Monty.Tests.Controller
     {
         private DebitController _debitController;
         private ViewResult _viewResult;
-        private Mock<DebitRepository> _repo;
+        private Mock<IRepository<Debit>> _repo;
 
         protected override void Given()
         {
-            _repo = new Mock<DebitRepository>();
-            _repo.Setup(r => r.GetAllDebits()).Returns(new List<Debit> { new Debit("Test", "12/12/2012") });
+            _repo = new Mock<IRepository<Debit>>();
+            _repo.Setup(r => r.GetAll()).Returns(new List<Debit> { new Debit("Test", "12/12/2012") });
             _debitController = new DebitController(_repo.Object);
         }
 
@@ -69,7 +69,7 @@ namespace Monty.Tests.Controller
         [Test]
         public void Should_call_repo()
         {
-            _repo.Verify(r => r.GetAllDebits());
+            _repo.Verify(r => r.GetAll());
         }
     }
 }

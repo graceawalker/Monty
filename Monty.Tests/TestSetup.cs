@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Monty.Model.DAL;
 using Monty.Repository;
+using Monty.UI;
 using NUnit.Framework;
 
 namespace Monty.Tests
@@ -17,6 +18,7 @@ namespace Monty.Tests
         public void BeforeEachTest()
         {
             Database.Clear();
+         
             IOC.RegisterComponents();
             Given();
             When();

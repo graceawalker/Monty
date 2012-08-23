@@ -158,3 +158,5 @@ D:\Monty\Monty\Monty.Tests\bin\Debug\Shouldly.pdb
 D:\Monty\Monty\Monty.Tests\bin\Debug\MongoDB.Driver.pdb
 D:\Monty\Monty\Monty.Tests\bin\Debug\MongoDB.Driver.xml
 D:\Monty\Monty\Monty.Tests\obj\Debug\Monty.Tests.pdb
+D:\Monty\Monty\Monty.Tests\bin\Debug\Monty.dll
+D:\Monty\Monty\Monty.Tests\bin\Debug\Monty.pdb

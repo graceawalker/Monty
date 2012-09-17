@@ -4,13 +4,23 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Monty.Model.DAL;
+using Monty.Repository;
 
 namespace Monty.UI.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IRepository<Debit> _debitRepo;
+        private readonly IRepository<Account> _accountRepo;
+        public IRepository<Credit> _creditRepo;
         //
         // GET: /Home/
+        public HomeController(IRepository<Credit> creditRepo, IRepository<Debit> debitRepo, IRepository<Account> accountRepo)
+        {
+            _debitRepo = debitRepo;
+            _accountRepo = accountRepo;
+            _creditRepo = creditRepo;
+        }
 
         public ActionResult Index()
         {
@@ -21,14 +31,14 @@ namespace Monty.UI.Controllers
         {
             if (type == "credit")
             {
-                return PartialView("EditCredit", new Credit("Test", "20-2-2", 20.00));
+                return PartialView("EditCredit", _creditRepo.GetById(id));
             }
             if (type == "debit")
             {
-                return PartialView("EditDebit", new Debit("Test", "20-2-2", 22.00));
+                return PartialView("EditDebit", _debitRepo.GetById(id));
             }
             else
-                return PartialView("EditAccount", new Account("hello"));
+                return PartialView("EditAccount", _accountRepo.GetById(id));
         }
     }
 }

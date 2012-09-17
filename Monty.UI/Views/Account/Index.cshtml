@@ -3,23 +3,26 @@
 }
 
 <fieldset>
-    <table>
-        <tr>
-            <td>
-                Name
-            </td>
-            <td>
-                Start
-            </td>
-        </tr>
-        @foreach (var pp in Model)
-        {
+    <div class="datagrid">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Name
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (var pp in Model)
+            {
 
-            <tr>
-                <td>
-                    <div data-type="name" data-id="@pp.Id">@pp.Name</div>
-                </td>
-            </tr>
-        }
-    </table>
+                <tr data-type="account" data-id="@pp.Id">
+                    <td>
+                        @pp.Name
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
 </fieldset>

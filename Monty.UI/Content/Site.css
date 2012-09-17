@@ -1,47 +1,45 @@
 body
 {
     font-size: .85em;
-    font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+    font-family: "Trebuchet MS" , Verdana, Helvetica, Sans-Serif;
     color: #232323;
     background-color: #fff;
 }
 
-header,
-footer,
-nav,
-section {
+header, footer, nav, section
+{
     display: block;
 }
 
 /* Styles for basic forms
 -----------------------------------------------------------*/
 
-fieldset 
+fieldset
 {
-    border:1px solid #ddd;
-    padding:0 1.4em 1.4em 1.4em;
-    margin:0 0 1.5em 0;
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
 }
 
-legend 
+legend
 {
-    font-size:1.2em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
-textarea 
+textarea
 {
     min-height: 75px;
 }
 
-.editor-label 
+.editor-label
 {
     margin: 1em 0 0 0;
 }
 
-.editor-field 
+.editor-field
 {
-    margin:0.5em 0 0 0;
+    margin: 0.5em 0 0 0;
 }
 
 
@@ -74,4 +72,67 @@ textarea
     display: none;
 }
 
-.editPayPeriod{}
+.editPayPeriod
+{
+}
+
+.datagrid table
+{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+.datagrid
+{   
+    width: 40%;
+    font: normal 12px/150% Arial, Helvetica, sans-serif;
+    background: #fff;
+    overflow: hidden;
+    border: 10px solid #D9F7E9;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+.datagrid table td, .datagrid table th
+{
+    padding: 9px 4px;
+}
+.datagrid table thead th
+{
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #D9F7E9), color-stop(1, #FFFFFF) );
+    background: -moz-linear-gradient( center top, #D9F7E9 5%, #FFFFFF 100% );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D9F7E9', endColorstr='#FFFFFF');
+    background-color: #D9F7E9;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    border-left: 3px solid #D9F7E9;
+}
+.datagrid table thead th:first-child
+{
+    border: none;
+}
+.datagrid table tbody td
+{
+    color: #000000;
+    border-left: 3px solid #D9F7E9;
+    font-size: 12px;
+    font-weight: normal;
+}
+.datagrid table tbody .alt td
+{
+    background: #D9F1F7;
+    color: #000000;
+}
+.datagrid table tbody td:first-child
+{
+    border-left: none;
+}
+.datagrid table tbody tr:last-child td
+{
+    border-bottom: none;
+}
+tr.hovered {
+background-color: black;
+color: white;}
+

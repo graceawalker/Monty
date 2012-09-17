@@ -11,17 +11,20 @@ namespace Monty.Tests
     public class AccountRepositoryTests
     {
         private IRepository<Account> _repo;
+        private IRepository<Debit> _debitRepo;
 
         [TestFixtureSetUp]
         public void SetupRepo()
         {
             _repo = new AccountRepository();
+            _debitRepo = new DebitRepository();
         }
 
         [SetUp]
         public void ClearDb()
         {
             _repo.ClearAll();
+            _debitRepo.ClearAll();
         }
 
         [Test]

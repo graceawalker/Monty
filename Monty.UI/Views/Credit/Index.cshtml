@@ -1,28 +1,39 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
 <fieldset>
-    <table>
-        <tr>
-            <td>
-                Name
-            </td>
-            <td>
-                Start
-            </td>
-        </tr>
-        @foreach (var pp in Model)
-        {
+    <div class="datagrid">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Start
+                    </th>
+                    <th>
+                        Amount
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var pp in Model)
+                {
 
-            <tr>
-                <td>
-                    <div data-type="name" data-id="@pp.Id">@pp.Name</div>
-                </td>
-                <td>
-                    <div data-type="startDate" data-id="@pp.Id">@pp.Date</div>
-                </td>
-            </tr>
-        }
-    </table>
+                    <tr data-type="credit" data-id="@pp.Id">
+                        <td>
+                            @pp.Name
+                        </td>
+                        <td>
+                            @pp.Date.ToString("dd MMM yyy")
+                        </td>
+                        <td>
+                            @pp.Amount
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 </fieldset>

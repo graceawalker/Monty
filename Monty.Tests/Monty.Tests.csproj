@@ -68,6 +68,7 @@
   <ItemGroup>
     <Compile Include="AccountRepositoryTests.cs" />
     <Compile Include="Controller\WithMSpec\ControllerIndexActions.cs" />
+    <Compile Include="Controller\WithMSpec\EditFunctionCall.cs" />
     <Compile Include="DebitRepositoryTests.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="TestSetup.cs" />

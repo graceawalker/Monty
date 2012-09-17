@@ -33,33 +33,35 @@ namespace Monty.Tests
         [Test]
         public void Should_Get_All_Debits()
         {
-            _repo.AddNew(new Debit("Test", "02/02/2012"));
+            _repo.AddNew(new Debit("Test", "02/02/2012", 20.00));
             _repo.GetAll().Count().ShouldBe(1);
         }
         [Test]
         public void Should_get_account_debit_by_name()
         {
-            _repo.AddNew(new Debit("Test", "02/02/2012"));
+            _repo.AddNew(new Debit("Test", "02/02/2012", 20.00));
             _repo.GetByName("Test").Name.ShouldBe("Test");
         }
 
         [Test]
         public void Should_update_existing_account_debit()
         {
-            _repo.AddNew(new Debit("Test", "03/01/2012"));
+            _repo.AddNew(new Debit("Test", "03/01/2012", 20.00));
             var original = _repo.GetByName("Test");
             original.Name = "TestChange";
             original.Date = new DateTimeOffset(new DateTime(2012, 1, 1));
+            original.Amount = 21.00;
             _repo.Update(original);
             var retrieved = _repo.GetByName("TestChange");
             retrieved.Date.ShouldBe(new DateTimeOffset(new DateTime(2012,1,1)));
+            retrieved.Amount.ShouldBe(21.00);
             _repo.GetByName("Test").ShouldBe(null);
         }
 
         [Test]
         public void Should_delete_account_debit()
         {
-            _repo.AddNew(new Debit("Test", "02/02/2012"));
+            _repo.AddNew(new Debit("Test", "02/02/2012", 20.00));
             _repo.DeleteBy("Test");
             _repo.GetByName("Test").ShouldBe(null);
         }
@@ -67,7 +69,7 @@ namespace Monty.Tests
         [Test]
         public void Should_delete_account_debit_by_id()
         {
-            _repo.AddNew(new Debit("Test", "02/02/2012"));
+            _repo.AddNew(new Debit("Test", "02/02/2012", 20.00));
             var id = _repo.GetByName("Test").Id;
             _repo.DeleteById(id);
             _repo.GetByName("Test").ShouldBe(null);
@@ -76,7 +78,7 @@ namespace Monty.Tests
         [Test]
         public void Should_get_account_debit_by_id()
         {
-            _repo.AddNew(new Debit("Test", "02/02/2012"));
+            _repo.AddNew(new Debit("Test", "02/02/2012", 20.00));
             var id = _repo.GetByName("Test").Id;
             var returned = _repo.GetById(id);
             returned.Name.ShouldBe("Test");

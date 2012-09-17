@@ -16,12 +16,13 @@ namespace Monty.Model.DAL
 
         }
 
-        public Credit(string name, string date)
+        public Credit(string name, string date, double amount)
         {
             Name = name;
             DateTime parsed;
             DateTime.TryParse(date, out parsed);
             Date = parsed;
+            Amount = amount;
         }
 
         [BsonElement]
@@ -29,8 +30,6 @@ namespace Monty.Model.DAL
         public DateTimeOffset Date { get; set; }
         [BsonId(IdGenerator = typeof(StringObjectIdGenerator))]
         public string Id { get; set; }
-
-   
-
+        public double Amount { get; set; }
     }
 }

@@ -1,11 +1,15 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="8DE8BC45-4D56-4475-87D5-07D00153D0B6/d:Controllers/f:PayPeriodController.cs" caret="656" fromTop="18" />
-    <File id="8DE8BC45-4D56-4475-87D5-07D00153D0B6/d:Views/d:PayPeriod/f:Existing.cshtml" caret="339" fromTop="14" />
-    <File id="8DE8BC45-4D56-4475-87D5-07D00153D0B6/d:Views/d:PayPeriod/f:New.cshtml" caret="100" fromTop="2" />
     <File id="8DE8BC45-4D56-4475-87D5-07D00153D0B6/f:Global.asax.cs" caret="678" fromTop="1" />
+    <File id="CA050C23-B9DF-4B10-BEE8-15AE911D0547/d:DAL/f:Credit.cs" caret="0" fromTop="0" />
+    <File id="CA050C23-B9DF-4B10-BEE8-15AE911D0547/d:DAL/f:Account.cs" caret="0" fromTop="0" />
+    <File id="A3EF4BA4-00F7-4D17-A72C-F033FCD17420/d:Controller/f:ControllerTest.cs" caret="322" fromTop="14" />
+    <File id="A3EF4BA4-00F7-4D17-A72C-F033FCD17420/d:Controller/d:WithMSpec/f:CreditController.cs" caret="332" fromTop="14" />
   </RecentFiles>
   <RecentEdits>
-    <File id="8DE8BC45-4D56-4475-87D5-07D00153D0B6/d:Controllers/f:PayPeriodController.cs" caret="489" fromTop="18" />
+    <File id="A3EF4BA4-00F7-4D17-A72C-F033FCD17420/d:Controller/f:ControllerTest.cs" caret="469" fromTop="8" />
+    <File id="A3EF4BA4-00F7-4D17-A72C-F033FCD17420/d:Controller/d:WithMSpec/f:CreditController.cs" caret="491" fromTop="16" />
+    <File id="A3EF4BA4-00F7-4D17-A72C-F033FCD17420/d:Controller/d:WithMSpec/f:CreditController.cs" caret="1535" fromTop="31" />
+    <File id="A3EF4BA4-00F7-4D17-A72C-F033FCD17420/d:Controller/d:WithMSpec/f:CreditController.cs" caret="1078" fromTop="28" />
   </RecentEdits>
 </RecentFiles>

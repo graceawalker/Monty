@@ -13,10 +13,11 @@ namespace Monty.Model.DAL
     {
         public Account()
         {
-
+            Debits = new List<Debit>();
+            Credits = new List<Credit>();
         }
 
-        public Account(string name)
+        public Account(string name):this()
         {
             Name = name;
         }
@@ -25,8 +26,7 @@ namespace Monty.Model.DAL
         public string Name { get; set; }
         [BsonId(IdGenerator = typeof(StringObjectIdGenerator))]
         public string Id { get; set; }
-
-   
-
+        public List<Credit> Credits { get; set; }
+        public List<Debit> Debits { get; set; }
     }
 }

@@ -79,5 +79,30 @@ namespace Monty.Tests
             var returned = _repo.GetById(id);
             returned.Name.ShouldBe("Test");
         }
+
+        [Test]
+        public void Should_link_account_to_multiple_debits()
+        {
+            var account = new Account("Test");
+            account.Debits.Add(new Debit("Test1", "02/02/2012", 22.00));
+            account.Debits.Add(new Debit("Test2", "02/02/2012", 27.00));
+            _repo.AddNew(account);
+            var retrieved = _repo.GetByName("Test");
+            retrieved.Debits.FirstOrDefault(d=>d.Name == "Test1").Amount.ShouldBe(22.00);
+            retrieved.Debits.FirstOrDefault(d => d.Name == "Test2").Amount.ShouldBe(27.00);
+        }
+
+
+        [Test]
+        public void Should_link_account_to_multiple_credits()
+        {
+            var account = new Account("Test");
+            account.Credits.Add(new Credit("Test1", "02/02/2012", 22.00));
+            account.Credits.Add(new Credit("Test2", "02/02/2012", 27.00));
+            _repo.AddNew(account);
+            var retrieved = _repo.GetByName("Test");
+            retrieved.Credits.FirstOrDefault(d => d.Name == "Test1").Amount.ShouldBe(22.00);
+            retrieved.Credits.FirstOrDefault(d => d.Name == "Test2").Amount.ShouldBe(27.00);
+        }
     }
 }

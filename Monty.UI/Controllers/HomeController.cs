@@ -21,14 +21,14 @@ namespace Monty.UI.Controllers
         {
             if (type == "credit")
             {
-                return PartialView("Edit", new Credit("Test", "20-2-2", 20.00));
+                return PartialView("EditCredit", new Credit("Test", "20-2-2", 20.00));
             }
             if (type == "debit")
             {
-                return PartialView("Edit", new Debit("Test", "20-2-2", 22.00));
+                return PartialView("EditDebit", new Debit("Test", "20-2-2", 22.00));
             }
             else
-                return PartialView("Edit", new Account("hello"));
+                return PartialView("EditAccount", new Account("hello"));
         }
     }
 }

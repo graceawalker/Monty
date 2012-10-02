@@ -10,12 +10,12 @@ namespace Monty.Tests
     [TestFixture]
     public class CreditRepositoryTests
     {
-        private IRepository<Credit> _repo;
+        private RepositoryType<Credit> _repo;
 
         [TestFixtureSetUp]
         public void SetupRepo()
         {
-            _repo = new CreditRepository();
+            _repo = new CreditRepositoryType(true);
         }
 
         [SetUp]

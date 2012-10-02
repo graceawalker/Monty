@@ -2,7 +2,8 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <fieldset>
-   <div class="datagrid">
+    @Html.ActionLink("Create New", "AddNew")
+    <div class="datagrid">
         <table>
             <thead>
                 <tr>
@@ -20,7 +21,7 @@
             <tbody>
                 @foreach (var pp in Model)
                 {
-                <tr data-type="debit" data-id="@pp.Id">
+                    <tr data-type="debit" data-id="@pp.Id">
                         <td>
                             @pp.Name
                         </td>

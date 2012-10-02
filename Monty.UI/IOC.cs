@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Web.Configuration;
 using Castle.Windsor;
 using Castle.Windsor.Installer;
 using Castle.MicroKernel.Registration;
@@ -15,9 +17,9 @@ namespace Monty.UI
         public static IWindsorContainer RegisterComponents()
         {
             var container = new WindsorContainer().Install(FromAssembly.This());
-            container.Register(Component.For<IRepository<Credit>>().ImplementedBy<CreditRepository>());
-            container.Register(Component.For<IRepository<Debit>>().ImplementedBy<DebitRepository>());
-            container.Register(Component.For<IRepository<Account>>().ImplementedBy<AccountRepository>());
+            container.Register(Component.For<RepositoryType<Credit>>().ImplementedBy<CreditRepositoryType>().DependsOn(new Hashtable{ {"isTesting" , false}}));
+            container.Register(Component.For<RepositoryType<Debit>>().ImplementedBy<DebitRepositoryType>().DependsOn(new Hashtable { { "isTesting", false } }));
+            container.Register(Component.For<RepositoryType<Account>>().ImplementedBy<AccountRepositoryType>().DependsOn(new Hashtable { { "isTesting", false } }));
             return container;
 
         }

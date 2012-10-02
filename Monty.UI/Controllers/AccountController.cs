@@ -6,10 +6,10 @@ namespace Monty.UI.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly IRepository<Account> _repository;
+        private readonly RepositoryType<Account> _repository;
         //
         // GET: /Debit/
-        public AccountController(IRepository<Account> repository)
+        public AccountController(RepositoryType<Account> repository)
         {
             _repository = repository;
         }
@@ -20,5 +20,24 @@ namespace Monty.UI.Controllers
             return View(accounts);
         }
 
+        [HttpGet]
+        public PartialViewResult Edit(string id)
+        {
+            return PartialView("Edit", _repository.GetById(id));
+        }
+
+        [HttpPost]
+        public ActionResult Edit(Account toEdit)
+        {
+            _repository.Update(toEdit);
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public PartialViewResult AddNew()
+        {
+            var toCreate = new Account("");
+            return PartialView("Edit", toCreate);
+        }
     }
 }

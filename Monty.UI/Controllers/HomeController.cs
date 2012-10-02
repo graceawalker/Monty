@@ -10,12 +10,12 @@ namespace Monty.UI.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IRepository<Debit> _debitRepo;
-        private readonly IRepository<Account> _accountRepo;
-        public IRepository<Credit> _creditRepo;
+        private readonly RepositoryType<Debit> _debitRepo;
+        private readonly RepositoryType<Account> _accountRepo;
+        public RepositoryType<Credit> _creditRepo;
         //
         // GET: /Home/
-        public HomeController(IRepository<Credit> creditRepo, IRepository<Debit> debitRepo, IRepository<Account> accountRepo)
+        public HomeController(RepositoryType<Credit> creditRepo, RepositoryType<Debit> debitRepo, RepositoryType<Account> accountRepo)
         {
             _debitRepo = debitRepo;
             _accountRepo = accountRepo;
@@ -27,18 +27,5 @@ namespace Monty.UI.Controllers
             return View();
         }
 
-        public PartialViewResult Edit(string type, string id)
-        {
-            if (type == "credit")
-            {
-                return PartialView("EditCredit", _creditRepo.GetById(id));
-            }
-            if (type == "debit")
-            {
-                return PartialView("EditDebit", _debitRepo.GetById(id));
-            }
-            else
-                return PartialView("EditAccount", _accountRepo.GetById(id));
-        }
     }
 }

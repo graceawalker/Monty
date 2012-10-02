@@ -10,12 +10,12 @@ namespace Monty.Tests
     [TestFixture]
     public class DebitRepositoryTests
     {
-        private IRepository<Debit> _repo;
+        private RepositoryType<Debit> _repo;
 
         [TestFixtureSetUp]
         public void SetupRepo()
         {
-            _repo = new DebitRepository();
+            _repo = new DebitRepositoryType(true);
         }
 
         [SetUp]

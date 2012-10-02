@@ -31,11 +31,10 @@
       navigation.popup.dialog({
           modal: true,
           open: function () {
-              $(this).load('../Home/Edit', { type: navigation.location, id: navigation.id });
+              $(this).load('../'+navigation.location+'/Edit/' + navigation.id);
           },
           height: 500,
           width: 600,
-          title: 'Edit',
           close: function () {
 
           }

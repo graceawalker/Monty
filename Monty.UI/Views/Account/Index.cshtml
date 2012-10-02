@@ -1,8 +1,8 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
 <fieldset>
+    @Html.ActionLink("Create New", "AddNew")
     <div class="datagrid">
         <table>
             <thead>
@@ -13,15 +13,15 @@
                 </tr>
             </thead>
             <tbody>
-            @foreach (var pp in Model)
-            {
+                @foreach (var pp in Model)
+                {
 
-                <tr data-type="account" data-id="@pp.Id">
-                    <td>
-                        @pp.Name
-                    </td>
-                </tr>
-            }
+                    <tr data-type="account" data-id="@pp.Id">
+                        <td>
+                            @pp.Name
+                        </td>
+                    </tr>
+                }
             </tbody>
         </table>
     </div>

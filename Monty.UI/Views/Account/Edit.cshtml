@@ -1,0 +1,7 @@
+﻿@model Monty.Model.DAL.Account
+@using (Html.BeginForm("Edit", "Account", Model))
+{
+    <label>
+        Name</label>@Html.TextBoxFor(m => m.Name)
+    <input type="submit" value="Edit" name="Edit" />
+}

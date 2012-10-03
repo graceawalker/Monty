@@ -16,16 +16,15 @@
 </html>
 <script type="text/javascript">
 
-    var navigation = new Navigation();
 
     $(".datagrid tr").not(':first').hover(
-  function () {
-      $(this).css("cursor", "pointer");
-  },
-  function () {
-      $(this).css("cursor", "default");
-  }
-);
+        function() {
+            $(this).css("cursor", "pointer");
+        },
+        function() {
+            $(this).css("cursor", "default");
+        }
+    );
 
     $(".datagrid tr").live('click', function () {
         navigation.location = $(this).attr('data-type');
@@ -42,11 +41,14 @@
 
             }
         });
-
         navigation.popup.dialog('open');
     });
 
     function Navigation() {
         this.popup = $('<div>').dialog({ autoOpen: false });
     };
+
+
+    var navigation = new Navigation();
+
 </script>

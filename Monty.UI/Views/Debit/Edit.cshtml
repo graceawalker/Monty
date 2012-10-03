@@ -1,6 +1,4 @@
-﻿@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+﻿
 @model Monty.Model.DAL.Debit
 @using (Html.BeginForm("Edit", "Debit"))
 {
@@ -12,3 +10,6 @@
         Amount</label>@Html.TextBoxFor(m => m.Amount)
     <input type="submit" value="Edit" name="Edit" />
 }
+<script type="text/javascript">
+    $("#Date").datepicker({ dateFormat: "dd/mm/yy", changeYear: true });
+</script>

@@ -1,6 +1,4 @@
-﻿@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+﻿
 @model Monty.Model.DAL.Account
 @using (Html.BeginForm("Edit", "Account", Model))
 {
@@ -8,3 +6,6 @@
         Name</label>@Html.TextBoxFor(m => m.Name)
     <input type="submit" value="Edit" name="Edit" />
 }
+<script type="text/javascript">
+    $("#Date").datepicker({ dateFormat: "dd/mm/yy", changeYear: true });
+</script>

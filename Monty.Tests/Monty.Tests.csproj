@@ -78,6 +78,7 @@
   <ItemGroup>
     <Compile Include="AccountRepositoryTests.cs" />
     <Compile Include="Controller\AddActions.cs" />
+    <Compile Include="Controller\DeleteActions.cs" />
     <Compile Include="Controller\IndexActions.cs" />
     <Compile Include="Controller\EditActions.cs" />
     <Compile Include="DebitRepositoryTests.cs" />

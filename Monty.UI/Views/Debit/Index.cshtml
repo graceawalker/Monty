@@ -31,6 +31,9 @@
                         <td>
                             @pp.Amount
                         </td>
+                                                                        <td>
+                            @Html.ActionLink("Delete", "Delete", new {id= @pp.Id})
+                        </td>
                     </tr>
                 }
             </tbody>

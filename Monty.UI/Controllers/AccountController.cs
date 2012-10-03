@@ -39,5 +39,11 @@ namespace Monty.UI.Controllers
             var toCreate = new Account("");
             return PartialView("Edit", toCreate);
         }
+
+        public ActionResult Delete(string id)
+        {
+            _repository.DeleteById(id);
+            return RedirectToAction("Index");
+        }
     }
 }

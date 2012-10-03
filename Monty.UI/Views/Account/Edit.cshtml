@@ -5,6 +5,7 @@
     <label>
         Name</label>@Html.TextBoxFor(m => m.Name)
     <input type="submit" value="Edit" name="Edit" />
+    @Html.DropDownListFor(m=>m.Credits, )
 }
 <script type="text/javascript">
     $("#Date").datepicker({ dateFormat: "dd/mm/yy", changeYear: true });

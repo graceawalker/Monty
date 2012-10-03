@@ -106,7 +106,7 @@ namespace Monty.Tests.Controller
             controller = new DebitController(_repo.Object);
         };
 
-        private It should_return_a_viewResult_with_one_credit = () =>
+        private It should_redirect_to_debit_index = () =>
         {
             var result = controller.Edit(_edited) as RedirectToRouteResult;
             result.RouteValues["Action"].ShouldBeTheSameAs("Index");
@@ -123,18 +123,28 @@ namespace Monty.Tests.Controller
     {
         private static AccountController controller;
         private static Mock<RepositoryType<Account>> _repo;
+        private static Account _toEdit;
 
         private Establish context = () =>
         {
+            _toEdit = new Account("hello");
+            _toEdit.Credits.Add(new Credit("TestCredit","",21));
+            _toEdit.Debits.Add(new Debit("TestDebit", "", 21));
             _repo = new Mock<RepositoryType<Account>>();
-            _repo.Setup(r => r.GetById(Moq.It.IsAny<string>())).Returns(new Account("hello"));
+
+            _repo.Setup(r => r.GetById(Moq.It.IsAny<string>())).Returns(_toEdit);
             controller = new AccountController(_repo.Object);
         };
 
-        private It should_return_a_partialviewResult_with_a_debit = () =>
+        private It should_return_a_partialviewResult_with_an_account = () =>
         {
             var result = controller.Edit("abc1234") as PartialViewResult;
-            (result.Model as Account).Name.ShouldEqual("hello");
+            var accountResult = result.Model as Account;
+            accountResult.Name.ShouldEqual("hello");
+            accountResult.Credits.Count.ShouldEqual(1);
+            accountResult.Credits[0].Name.ShouldEqual("TestCredit");
+            accountResult.Debits.Count.ShouldEqual(1);
+            accountResult.Debits[0].Name.ShouldEqual("TestDebit");
         };
 
         private It should_call_repo = () =>
@@ -153,17 +163,22 @@ namespace Monty.Tests.Controller
         private Establish context = () =>
         {
             _repo = new Mock<RepositoryType<Account>>();
-            _repo.Setup(r => r.GetAll()).Returns(new List<Account> { new Account("Test") });
             _edited = new Account("Test");
             _edited.Id = "TestID";
+            _repo.Setup(r => r.GetAll()).Returns(new List<Account> { _edited });
+
             controller = new AccountController(_repo.Object);
         };
 
-        private It should_return_a_viewResult_with_one_credit = () =>
-        {
-            var result = controller.Edit(_edited) as RedirectToRouteResult;
-            result.RouteValues["Action"].ShouldBeTheSameAs("Index");
-        };
+        private It should_redirect_to_accounts_index = () =>
+                                                           {
+                                                               _edited.Name = "TestHello";
+                                                               _edited.Credits.Add(new Credit("TestCredit","",2));
+                                                               _edited.Debits.Add(new Debit("TestDebit", "", 2));
+                                                               var result =
+                                                                   controller.Edit(_edited) as RedirectToRouteResult;
+                                                               result.RouteValues["Action"].ShouldBeTheSameAs("Index");
+                                                           };
 
         private It should_call_repository_method = () =>
         {
